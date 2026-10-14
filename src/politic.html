@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Фавікон для світлої теми браузера -->
+  <link
+  rel="icon"
+  href="./images/favicon-light.svg"
+  media="(prefers-color-scheme: light)"
+  type="image/svg+xml"
+  >
+
+  <!-- Фавікон для темної теми браузера -->
+  <link
+    rel="icon"
+    href="./images/favicon-dark.svg"
+    media="(prefers-color-scheme: dark)"
+    type="image/svg+xml"
+  >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tesmeria Privacy Policy</title>
+    <link rel="stylesheet" href="./scss/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    /> -->
+  </head>
+  <body>
+    <div class="menu-overlay"></div>
+    <header class="header">
+      <div class="container">
+        <div class="header-inner">
+          <div class="header-logo">
+            <a href="/"
+              ><img
+                src="./images/header-logo.png"
+                width="32"
+                height="48"
+                alt="Logo"
+            /></a>
+          </div>
+          <div class="header-logo-mobile">
+            <a href="/"
+              ><img
+                src="./images/header-logo-mobile.png"
+                width="18"
+                height="28"
+                alt="Logo"
+            /></a>
+          </div>
+
+          <button type="button" class="burger" aria-label="Toggle menu" aria-expanded="false">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </button>
+
+          <div class="header-menu">
+            <div class="burger-close">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M6.4 19L5 17.6L10.6 12L5 6.4L6.4 5L12 10.6L17.6 5L19 6.4L13.4 12L19 17.6L17.6 19L12 13.4L6.4 19Z"
+                  fill="#fff"
+                />
+              </svg>
+            </div>
+            <a href="#hero" class="header-link">Home</a>
+            <a href="#about" class="header-link">About</a>
+            <a href="#services" class="header-link">Services</a>
+            <a href="#why" class="header-link">Why Tesmeria</a>
+            <a href="#faq" class="header-link">FAQ</a>
+            <a href="#contact" class="header-link">Contact</a>
+          </div>
+
+          <div class="header-buttons mobile-visible">
+            <button class="header-button">
+              <span>Get in touch</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                <path d="M0.835938 0C1.05771 0 1.27084 0.087419 1.42773 0.244141L8.33594 7.16113V0.835938C8.33602 0.615115 8.42397 0.40326 8.58008 0.24707C8.73636 0.0907898 8.94891 0.00292969 9.16992 0.00292969C9.39081 0.00301838 9.60259 0.0908689 9.75879 0.24707C9.91499 0.403275 10.0028 0.615042 10.0029 0.835938V9.16992C10.0016 9.27869 9.97917 9.38626 9.93652 9.48633C9.85196 9.68995 9.68995 9.85196 9.48633 9.93652C9.38626 9.97917 9.27869 10.0016 9.16992 10.0029H0.835938C0.615042 10.0028 0.403275 9.91499 0.24707 9.75879C0.0908689 9.60259 0.00301838 9.39081 0.00292969 9.16992C0.00292969 8.94891 0.0907898 8.73636 0.24707 8.58008C0.40326 8.42397 0.615115 8.33602 0.835938 8.33594H7.16113L0.244141 1.42773C0.087419 1.27084 0 1.05771 0 0.835938C8.39233e-05 0.614134 0.0872955 0.400986 0.244141 0.244141C0.400986 0.0872955 0.614134 8.39233e-05 0.835938 0Z" fill="#1A3234"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="popup-overlay" id="popup">
+      <div class="popup">
+        <div class="popup-block">
+          <div class="popup-inner">
+            <div class="popup-context">
+              <h3>Start a Conversation</h3>
+              <p class="pop-text">
+                Tesmeria helps businesses sharpen their positioning, communicate their value clearly and build marketing that attracts the right attention
+              </p>
+            </div>
+  
+            <form class="popup-form" id="joinForm">
+              <div class="form-field">
+                <input type="text" id="name" name="name" placeholder="Your name" required />
+              </div>
+              <div class="form-field">
+                <input type="text" id="company" name="company" placeholder="Company name"/>
+              </div>
+              <!-- <div class="form-field">
+                 <input type="email" id="email" name="email" placeholder="Add your Email address*" required/>
+              </div> -->
+              <!-- <div class="form-field">
+                 <input type="text" id="interest" name="interest" placeholder="Service Interest"/>
+              </div> -->
+              <div class="form-field">
+                <input type="tel" id="phone" name="phone" placeholder="Your phone"/>
+              </div>
+
+              <div class="form-field">
+                <div class="custom-select">
+                  <input type="hidden" name="support" value="">
+                  <button type="button" class="custom-select__trigger" aria-haspopup="listbox" aria-expanded="false">
+                    <span class="custom-select__inner">
+                      <span class="custom-select__label">Type Of Support</span>
+                      <span class="custom-select__value"></span>
+                    </span>
+                    <svg class="custom-select__arrow" width="12" height="8" viewBox="0 0 12 8" fill="none" aria-hidden="true">
+                      <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
+                  <div class="custom-select__dropdown">
+                    <ul class="custom-select__options" role="listbox">
+                      <li role="option" data-value="marketing-strategy">Marketing Strategy</li>
+                      <li role="option" data-value="brand-positioning">Brand Positioning And Messaging</li>
+                      <li role="option" data-value="digital-marketing">Digital Marketing</li>
+                      <li role="option" data-value="content-campaigns">Content And Campaign Development</li>
+                      <li role="option" data-value="marketing-consulting">Marketing Consulting</li>
+                      <li role="option" data-value="not-sure">Not Sure Yet</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="form-field">
+                <!-- <label for="name">Message*</label> -->
+                <textarea id="message" name="message" placeholder="Your message" rows="3" required></textarea>
+              </div>
+              <div class="popup-wrapper">
+                <button type="submit" class="popup-btn">
+                  <span>Discuss Your Marketing Goals</span>
+                  <svg class="popup-btn__icon" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">
+                    <path d="M0.836914 0C1.05874 4.73427e-05 1.27184 0.0882828 1.42871 0.245117L8.33691 7.16211V0.836914C8.337 0.616015 8.42485 0.404252 8.58105 0.248047C8.73729 0.0918547 8.949 0.00394521 9.16992 0.00390625C9.39094 0.00390625 9.60349 0.0917665 9.75977 0.248047C9.91581 0.404228 10.0028 0.616135 10.0029 0.836914V9.1709C10.0016 9.27968 9.97918 9.38722 9.93652 9.4873C9.85194 9.69086 9.68991 9.85296 9.48633 9.9375C9.38627 9.98008 9.27866 10.0026 9.16992 10.0039H0.836914C0.6159 10.0039 0.403351 9.91605 0.24707 9.75977C0.0910139 9.60359 0.00301774 9.39168 0.00292969 9.1709C0.00292969 8.94992 0.0908384 8.73733 0.24707 8.58105C0.403351 8.42477 0.6159 8.33691 0.836914 8.33691H7.16211L0.245117 1.42871C0.0882407 1.2718 -1.65317e-09 1.0588 0 0.836914C8.40267e-05 0.61511 0.0882722 0.401962 0.245117 0.245117C0.402013 0.0883526 0.615113 1.62981e-09 0.836914 0Z"/>
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        
+ 
+        <span class="close-popup" aria-label="Close popup"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M1 13L13 1M1 1L13 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg></span>
+      </div>
+    </div>
+
+    <section id="top" class="policy">
+      <div class="container" style="display: flex; flex-direction: column; align-items:center;">
+        <div class="policy-content">
+          <h3 class="policy-title">Privacy Policy </h3>
+          <p class="policy-text">Last updated: <strong class="strong">July 14, 2026</strong></p>
+          <p class="policy-text">TESMERIA SRL, operating through the website <a href="https://tesmeria.com">https://tesmeria.com</a>, respects the privacy of website visitors, prospective clients, clients and other individuals who communicate with the Company.</p>
+          <p class="policy-text">This Privacy Policy explains what personal information we may collect, how and why we process it, with whom it may be shared and what rights individuals may exercise in relation to their personal data.</p>
+          <p class="policy-text">TESMERIA SRL is a company established in Costa Rica, with its registered address at: <br>
+            <strong>Province 07 Limon, Canton 06 Guacimo, Guacimo, one hundred meters north and four hundred meters west of Supermarket Pali, beige-colored house on the right side.</strong></p>
+          <p class="policy-text">For questions concerning this Privacy Policy or the processing of personal data, please contact us at <strong>info@tesmeria.com</strong>.</p>
+        </div>
+        
+
+        <div class="policy-inner">
+          
+          <div class="policy-item">
+            <p class="policy-item-title">1. Scope of This Privacy Policy</p>
+            <p class="policy-item-text">This Privacy Policy applies to personal information collected through tesmeria.com, including information submitted through contact forms, project inquiry forms, email communications and other interactions with Tesmeria.
+<br><br>
+              It also applies to personal information processed when we communicate with prospective clients, provide marketing or consulting services, manage business relationships or respond to requests.</p>
+          </div>
+
+          <div class="policy-item">
+            <p class="policy-item-title">2. Data Controller</p>
+            <p class="policy-item-text">TESMERIA SRL is the controller responsible for determining how and why personal data collected through the website and during business communications is processed.
+<br><br>
+              Company name: <strong>TESMERIA SRL</strong><br>
+              Website: <a href="https://tesmeria.com">https://tesmeria.com</a><br>
+              Email: <strong>info@tesmeria.com</strong><br>
+              Registered address: <strong>Province 07 Limon, Canton 06 Guacimo, Guacimo, one hundred meters north and four hundred meters west of Supermarket Pali, beige-colored house on the right side.</strong></p>
+          </div>
+
+          <div class="policy-item">
+            <p class="policy-item-title">3. Personal Information We May Collect</p>
+            <p class="policy-item-text">The type of information we collect depends on how an individual interacts with Tesmeria. <br>
+              Information provided directly may include: <br>
+              • Name;<br>
+              • Company or organization name;<br>
+              • Email address;<br>
+              • Telephone number;<br>
+              • Job title or professional role;<br>
+              • Information about a business, project or marketing requirements;<br>
+              • The type of service requested;<br>
+              • Messages, questions and other information submitted through the website or by email;<br><br>
+              
+              Information provided during consultations, project discussions or business correspondence. <br>
+              We may also collect limited technical information when an individual visits the website, including: <br>
+              • IP address; <br>
+              • Browser and device type; <br>
+              • Operating system; <br>
+              • Approximate location based on the IP address; <br>
+              • Pages visited and time spent on the website; <br>
+              • Referring website; <br>
+              • Date and time of access. <br> <br>
+              
+              We do not intentionally request sensitive personal data through the website. Individuals should avoid submitting confidential, sensitive or unnecessary personal information through general contact forms.</p>
+          </div>
+
+          <div class="policy-item">
+            <p class="policy-item-title">4. How We Collect Personal Information</p>
+            <p class="policy-item-text">We may collect personal information when an individual: <br>
+              • Submits a contact or project inquiry form; <br>
+              • Contacts us by email or telephone; <br>
+              • Requests information about our services; <br>
+              • Arranges or participates in a consultation; <br>
+              • Enters into a business relationship with Tesmeria; <br>
+              • Provides information during the delivery of marketing or consulting services; <br>
+              • Subscribes to communications, where such an option is available;
+              • Visits or interacts with the website. <br><br>
+              
+              Certain technical information may be collected automatically by the website, hosting providers or security tools.</p>
+          </div>
+
+          <div class="policy-item">
+            <p class="policy-item-title">5. How We Use Personal Information</p>
+            <p class="policy-item-text">Tesmeria may process personal information for the following purposes: <br>
+              • To respond to inquiries, messages and requests; <br>
+              • To arrange consultations and discuss potential projects; <br>
+              • To provide information about our marketing and consulting services; <br>
+              • To prepare proposals, quotations or scopes of work; <br>
+              • To establish, manage and perform client relationships; <br>
+              • To deliver agreed services and communicate about active projects; <br>
+              • To maintain business, administrative and accounting records; <br>
+              • To improve the website, services and user experience; <br>
+              • To protect the website and detect technical, fraudulent or security-related activity; <br>
+              • To comply with legal, regulatory, accounting or contractual obligations; <br>
+              • To establish, exercise or defend legal claims; <br>
+              • To send marketing communications where the recipient has provided consent or where otherwise permitted by applicable law. <br><br>
+              
+              We will not use personal information for purposes that are incompatible with the reason for which it was originally collected unless there is an appropriate legal basis to do so.</p>
+          </div>
+
+          <div class="policy-item">
+            <p class="policy-item-title">6. Legal Basis for Processing</p>
+            <p class="policy-item-text">Depending on the circumstances, personal information may be processed on one or more of the following grounds: <br>
+              • The consent of the data subject; <br>
+              • The need to take steps at the individual’s request before entering into a contract; <br>
+              • The conclusion or performance of a contract; <br>
+              • Compliance with legal or regulatory obligations; <br>
+              • The protection of the Company’s legitimate business interests, provided that such interests do not override the individual’s fundamental rights; <br>
+              • The establishment, exercise or defense of legal claims. <br><br>
+              
+              Where processing is based on consent, the individual may withdraw that consent at any time by contacting info@tesmeria.com. <br>
+              Withdrawal of consent does not affect the lawfulness of processing carried out before the consent was withdrawn.</p>
+          </div>
+
+          <div class="policy-item">
+            <p class="policy-item-title">7. Sharing of Personal Information</p>
+            <p class="policy-item-text">Tesmeria does not sell or rent personal information. <br>
+              We may disclose personal information where necessary for the operation of the website, management of our business or provision of services. <br><br>
+              
+              • Recipients may include: <br>
+              • Website hosting and technical service providers; <br>
+              • Cloud storage and email service providers; <br>
+              • Customer relationship management and communication platforms; <br>
+              • Website security and performance providers; <br>
+              • Accountants, auditors, lawyers and professional advisers; <br> 
+              • Contractors, consultants or service providers involved in a client project; <br>
+              • Government authorities, regulators, courts or law enforcement bodies where disclosure is legally required; <br>
+              •  A purchaser, investor or successor entity in connection with a merger, restructuring, acquisition or transfer of business assets.
+              <br><br>
+              Service providers acting on behalf of Tesmeria are expected to process personal information only for the agreed purposes and to apply appropriate confidentiality and security measures.</p>
+          </div>
+
+          <div class="policy-item">
+            <p class="policy-item-title">8. International Data Transfers</p>
+            <p class="policy-item-text">Personal information may be processed or stored outside Costa Rica when Tesmeria uses international hosting, cloud storage, email, communication or other technology providers.
+<br><br>
+              Where personal information is transferred internationally, we will take reasonable steps to ensure that the information receives an appropriate level of protection and is handled in accordance with applicable Costa Rican data protection requirements.
+              <br><br>
+              The level of data protection in another country may differ from that available in Costa Rica. Where appropriate, Tesmeria may use contractual, organizational or technical safeguards to protect transferred information.</p>
+          </div>
+          <div class="policy-item">
+            <p class="policy-item-title">9. Data Retention</p>
+            <p class="policy-item-text">Tesmeria retains personal information only for as long as reasonably necessary to fulfill the purposes described in this Privacy Policy.
+<br><br>
+              The applicable retention period may depend on: <br>
+              • The nature of the information; <br>
+              • The purpose for which it was collected; <br>
+              • The duration of the business or client relationship; <br>
+              • Contractual requirements; <br>
+              • Legal, accounting or regulatory obligations; <br>
+              • The need to resolve disputes or defend legal claims. <br><br>
+              
+              When personal information is no longer required, it may be deleted, anonymized or securely archived where continued retention is legally permitted or required.</p>
+          </div>
+          <div class="policy-item">
+            <p class="policy-item-title">10. Data Security</p>
+            <p class="policy-item-text">Tesmeria applies reasonable administrative, organizational and technical measures intended to protect personal information against unauthorized access, loss, misuse, alteration or disclosure.
+<br><br>
+              Access to personal information is limited to individuals and service providers who require it for legitimate business purposes.
+              <br><br>
+              However, no website, electronic communication or data storage system can be guaranteed to be completely secure. Individuals should avoid sending highly sensitive information through standard email or general website forms.</p>
+          </div>
+          <div class="policy-item">
+            <p class="policy-item-title">11. Personal Data Rights</p>
+            <p class="policy-item-text">Subject to applicable Costa Rican law, individuals may have the right to: <br>
+              • Request confirmation as to whether Tesmeria processes their personal data; <br>
+              • Request access to the personal information held about them;  <br>
+              • Request the correction or updating of inaccurate or incomplete information; <br>
+              • Request the deletion or suppression of personal information where legally permitted; <br>
+              • Object to certain processing of their personal information; <br>
+              • Withdraw consent where processing is based on consent; <br>
+              • Request information about how their personal data has been collected, used or shared; <br>
+              • Request that unauthorized or unlawful processing be stopped; <br>
+              • Consent to or object to the transfer of personal information where applicable. <br><br>
+              
+              Requests may be submitted to <strong>info@tesmeria.com.</strong> <br><br>
+              
+              To protect personal information, we may request reasonable evidence of identity before responding to a request. We may also request additional information where necessary to understand and process the request.
+              <br><br>
+              Requests will be handled within the time periods established by applicable Costa Rican data protection law.</p>
+          </div>
+          <div class="policy-item">
+            <p class="policy-item-title">12. Complaints to the Data Protection Authority</p>
+            <p class="policy-item-text">Individuals who believe that Tesmeria has processed their personal information in a manner that violates applicable data protection law may contact us at info@tesmeria.com so that we can review and address the issue. <br><br>
+
+              Individuals may also submit a complaint to the Agencia de Protección de Datos de los Habitantes, known as PRODHAB, the data protection authority of Costa Rica.
+              <br><br>
+              Authority: <strong>Agencia de Protección de Datos de los Habitantes – PRODHAB</strong> <br>
+              Address: <strong>San Pedro de Montes de Oca, Mall San Pedro, Ofimall Centro Ejecutivo, 6th floor, Costa Rica</strong> <br>
+              Telephone: <strong>+506 2234 0189</strong> <br>
+              Email: <strong>info@prodhab.go.cr</strong> <br>
+              Website: <a href="https://www.prodhab.go.cr">https://www.prodhab.go.cr</a></p>
+          </div>
+          <div class="policy-item">
+            <p class="policy-item-title">13. Complaints to the Data Protection Authority</p>
+            <p class="policy-item-text">Tesmeria may update this Privacy Policy from time to time to reflect changes in the website, services, data processing practices or applicable legal requirements.
+<br><br>
+              The updated version will be published on tesmeria.com with a revised “Last updated” date.
+              <br><br>
+              Individuals are encouraged to review this Privacy Policy periodically to remain informed about how personal information is handled.</p>
+          </div>
+          <div class="policy-item">
+            <p class="policy-item-title">14. Contact Us</p>
+            <p class="policy-item-text">
+              Questions, requests or concerns relating to this Privacy Policy or the processing of personal data may be sent to: <br>
+              <strong>TESMERIA SRL </strong> <br> <br>
+              <strong>Email: info@tesmeria.com</strong> <br><br>
+              Website: <a href="https://tesmeria.com">https://tesmeria.com</a> <br><br>
+              Address: <strong>Province 07 Limon, Canton 06 Guacimo, Guacimo, one hundred meters north and four hundred meters west of Supermarket Pali, beige-colored house on the right side.</strong></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <a href="/index.html#hero">
+          <img src="./images/footer-logo.png" width="256" height="52" alt="" class="footer-logo">
+        </a>
+        
+        <a href="mailto:info@tesmeria.com" class="footer-email">info@tesmeria.com</a>
+      </div>
+      <div class="footer-copyright">
+        <p class="footer-text">© 2026 TESMERIA SRL</p>
+        <a class="footer-text" href="./politic.html">Privacy Policy. All rights reserved</a>
+      </div>
+  </footer>
+
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

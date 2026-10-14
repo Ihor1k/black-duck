@@ -1,0 +1,321 @@
+.footer {
+  background: var(--ink);
+  border-top: 1px solid var(--line);
+
+  &__rail {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: 700px) {
+      // Figma mobile: side rails only — no 4-col center lines
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  &__wordmark {
+    display: flex;
+    justify-content: center;
+    padding: 40px 32px;
+    border-bottom: 1px solid var(--line);
+    background: #040404;
+
+    @media screen and (max-width: 700px) {
+      padding: 24px var(--pad);
+      justify-content: flex-start;
+    }
+
+    img {
+      width: 100%;
+      max-width: 1264px;
+      height: auto;
+      display: block;
+      opacity: 0.95;
+
+      @media screen and (max-width: 700px) {
+        max-width: none;
+        height: 31px;
+        width: auto;
+        max-width: 100%;
+        object-fit: contain;
+        object-position: left center;
+        opacity: 0.35;
+      }
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr var(--col) var(--col);
+
+    @media screen and (max-width: 900px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__tagline {
+    padding: 40px var(--pad);
+    background: #040404;
+
+    @media screen and (max-width: 700px) {
+      padding: 32px var(--pad);
+    }
+
+    p {
+      margin: 0;
+      font-family: var(--font-display);
+      font-size: clamp(28px, 3vw, 38px);
+      font-weight: 500;
+      line-height: 40px;
+      color: var(--on-dark);
+
+      @media screen and (max-width: 700px) {
+        font-size: 28px;
+        line-height: 32px;
+      }
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 40px var(--pad);
+    border-left: 1px solid var(--line);
+
+    @media screen and (max-width: 900px) {
+      border-left: none;
+      border-top: 1px solid var(--line);
+    }
+
+    @media screen and (max-width: 700px) {
+      padding: 32px var(--pad);
+    }
+
+    a {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 0;
+      font-family: var(--font-display);
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--on-dark-2);
+      transition: color 0.2s, padding-left 0.2s;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 6px;
+        height: 6px;
+        background: var(--accent);
+        opacity: 0;
+        transform: translateX(-6px);
+        transition: opacity 0.2s, transform 0.2s;
+      }
+
+      &:hover {
+        color: var(--on-dark);
+        padding-left: 14px;
+
+        &::before {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+    }
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 40px var(--pad);
+    border-left: 1px solid var(--line);
+
+    @media screen and (max-width: 900px) {
+      border-left: none;
+      border-top: 1px solid var(--line);
+    }
+
+    @media screen and (max-width: 700px) {
+      gap: 20px;
+      padding: 32px var(--pad);
+    }
+
+    a {
+      padding: 4px 0;
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 26px;
+      color: var(--accent);
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__label {
+    margin-bottom: 12px;
+    font-family: var(--font-display);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: var(--muted);
+
+    @media screen and (max-width: 700px) {
+      margin-bottom: 0;
+      line-height: 12px;
+      padding-bottom: 4px;
+    }
+  }
+
+  &__bottom {
+    display: grid;
+    grid-template-columns: 1fr var(--col) var(--col);
+    align-items: stretch;
+    border-top: 1px solid var(--line);
+
+    @media screen and (max-width: 900px) {
+      grid-template-columns: 1fr auto;
+      grid-template-areas:
+        "copy top"
+        "legal top";
+    }
+
+    @media screen and (max-width: 700px) {
+      grid-template-columns: 1fr 72px;
+      grid-template-areas:
+        "copy copy"
+        "legal top";
+    }
+
+    > p {
+      margin: 0;
+      padding: 24px var(--pad);
+      font-family: var(--font-body);
+      font-size: 12px;
+      line-height: 20px;
+      color: var(--caption);
+      background: #040404;
+
+      @media screen and (max-width: 900px) {
+        grid-area: copy;
+      }
+
+      @media screen and (max-width: 700px) {
+        border-bottom: 1px solid var(--line);
+      }
+    }
+  }
+
+  &__legal {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 24px var(--pad);
+    border-left: 1px solid var(--line);
+
+    @media screen and (max-width: 900px) {
+      grid-area: legal;
+      border-left: none;
+      padding-top: 0;
+    }
+
+    @media screen and (max-width: 700px) {
+      padding: 24px var(--pad);
+    }
+
+    a {
+      font-family: var(--font-body);
+      font-size: 12px;
+      line-height: 20px;
+      color: var(--caption);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      transition: color 0.2s, text-underline-offset 0.2s;
+
+      &:hover {
+        color: var(--on-dark);
+        text-underline-offset: 5px;
+      }
+    }
+
+    span {
+      color: var(--caption);
+      font-size: 12px;
+    }
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 72px;
+    height: 72px;
+    min-height: 72px;
+    padding: 24px;
+    justify-self: end;
+    border: none;
+    border-left: 1px solid var(--line);
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+    @media screen and (max-width: 900px) {
+      grid-area: top;
+    }
+
+    @media screen and (max-width: 700px) {
+      width: 72px;
+      height: auto;
+      min-height: 72px;
+      align-self: stretch;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: var(--accent);
+      transform: translateY(100%);
+      transition: transform 0.26s cubic-bezier(0.2, 0.7, 0.2, 1);
+      z-index: 0;
+    }
+
+    img {
+      position: relative;
+      z-index: 1;
+      display: block;
+      width: 24px;
+      height: 24px;
+      transition:
+        transform 0.26s cubic-bezier(0.2, 0.7, 0.2, 1),
+        filter 0.26s cubic-bezier(0.2, 0.7, 0.2, 1);
+    }
+
+    &:hover::before {
+      transform: translateY(0);
+    }
+
+    &:hover img {
+      filter: brightness(0);
+      transform: translateY(-2px);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      &::before,
+      img {
+        transition: none;
+      }
+    }
+  }
+}

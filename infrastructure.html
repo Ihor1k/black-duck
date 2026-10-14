@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./src/images/favicon-light.svg" media="(prefers-color-scheme: light)" type="image/svg+xml" />
+    <link rel="icon" href="./src/images/favicon-dark.svg" media="(prefers-color-scheme: dark)" type="image/svg+xml" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infrastructure — BLACK DUCK</title>
+    <meta name="description" content="Connect every part of the payment flow — gateways, processing, routing, and banking infrastructure." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="menu-overlay"></div>
+    <header class="header">
+      <div class="container">
+                <div class="header-inner">
+          <a href="./index.html" class="header-logo" aria-label="BLACK DUCK home">
+            <img src="./src/images/logo.svg" width="132" height="24" alt="BLACK DUCK" />
+          </a>
+          <nav class="header-menu" aria-label="Primary">
+            <div class="header-menu__body">
+              <div class="header-menu__links">
+                <a href="./index.html" class="header-link"><span>Home</span></a>
+                <a href="./about.html" class="header-link"><span>About</span></a>
+                <a href="./index.html#services" class="header-link"><span>Services</span></a>
+                <a href="./infrastructure.html" class="header-link is-active" aria-current="page"><span>Infrastructure</span></a>
+                <a href="./index.html#solutions" class="header-link"><span>Solutions</span></a>
+                <a href="./index.html#contact" class="header-link"><span>Contact</span></a>
+              </div>
+              <div class="header-menu__contact">
+                <span>Contact</span>
+                <a href="mailto:info@blackduckpay.com">info@blackduckpay.com</a>
+                <a href="">blackduckpay.com</a>
+              </div>
+            </div>
+          </nav>
+          <div class="header-actions">
+            <button type="button" class="header-button">Get in touch</button>
+            <button type="button" class="burger" aria-label="Toggle menu" aria-expanded="false">
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="popup-overlay" id="popup">
+      <div class="popup panel" role="dialog" aria-modal="true" aria-labelledby="popup-title">
+        <div class="popup-inner">
+          <div class="popup-header">
+            <p class="eyebrow"><span class="eyebrow__dash"></span>Get in touch</p>
+            <button type="button" class="close-popup" aria-label="Close popup">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 13L13 1M1 1L13 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </button>
+          </div>
+          <div class="popup-context">
+            <h3 id="popup-title">Tell us about your payment needs.</h3>
+            <p class="pop-text">Share a few details about your business, current payment setup, and what you are looking to improve or introduce. The BLACK DUCK team can review your requirements and get back to you with relevant next steps.</p>
+          </div>
+          <form class="popup-form" id="joinForm">
+            <div class="form-row form-row--name">
+              <div class="form-field">
+                <label for="popup-name">Name</label>
+                <input type="text" id="popup-name" name="name" required />
+              </div>
+              <div class="form-field">
+                <label for="popup-company">Company</label>
+                <input type="text" id="popup-company" name="company" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="popup-email">Business email</label>
+                <input type="email" id="popup-email" name="email" required />
+              </div>
+              <div class="form-field">
+                <label for="popup-interest">Service of interest</label>
+                <div class="custom-select">
+                  <input type="hidden" name="interest" value="" />
+                  <button type="button" class="custom-select__trigger" aria-haspopup="listbox" aria-expanded="false">
+                    <span class="custom-select__value"></span>
+                    <img src="./src/images/icon-chevron.svg" width="20" height="20" alt="" />
+                  </button>
+                  <div class="custom-select__dropdown">
+                    <ul class="custom-select__options" role="listbox">
+                      <li role="option" data-value="online-payments">Online Payments</li>
+                      <li role="option" data-value="card-payments">Card Payments</li>
+                      <li role="option" data-value="payment-processing">Payment Processing</li>
+                      <li role="option" data-value="business-payouts">Business Payouts</li>
+                      <li role="option" data-value="multi-currency">Multi-Currency &amp; Cross-Border</li>
+                      <li role="option" data-value="payment-links">Payment Links</li>
+                      <li role="option" data-value="payment-gateway">Payment Gateway</li>
+                      <li role="option" data-value="other">Other</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="popup-message">Message</label>
+              <textarea id="popup-message" name="message" rows="3" required></textarea>
+            </div>
+            <div class="popup-wrapper">
+              <label class="form-check">
+                <input type="checkbox" name="privacy" required />
+                <span>I agree to the processing of my personal data in accordance with the <a href="./privacy.html">Privacy Policy</a>.</span>
+              </label>
+              <button type="submit" class="btn btn--accent">
+                <span>Send request</span>
+                <img src="./src/images/icon-arrow-btn.svg" width="20" height="20" alt="" />
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <section class="infra-hero">
+        <div class="container">
+          <div class="rail infra-hero__rail">
+            <p class="infra-hero__vertical" aria-hidden="true"><span>/</span> Transaction routing</p>
+            <div class="infra-hero__media" aria-hidden="true">
+              <div class="video">
+                <video
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="auto"
+                >
+                  <source src="./src/videos/infrastructure-hero-video.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+            <div class="infra-hero__top">
+              <p class="eyebrow"><span class="eyebrow__dash"></span>Payment infrastructure</p>
+              <div class="infra-hero__data panel">
+                <div class="infra-hero__data-row">
+                  <span>Gateway:</span>
+                  <strong>Connectivity</strong>
+                </div>
+                <div class="infra-hero__data-row">
+                  <span>Processing:</span>
+                  <strong>Providers</strong>
+                </div>
+                <div class="infra-hero__data-row">
+                  <span>Transaction:</span>
+                  <strong>Routing</strong>
+                </div>
+                <div class="infra-hero__data-row">
+                  <span>Banking:</span>
+                  <strong>Infrastructure</strong>
+                </div>
+              </div>
+            </div>
+            <div class="infra-hero__title panel">
+              <h1>Connect every part <span>of the payment flow.</span></h1>
+            </div>
+            <div class="infra-hero__bottom">
+              <p>BLACK DUCK helps businesses connect the systems behind online payments, from checkout and payment gateway functionality to processing providers, routing, and banking infrastructure. The result is a more connected payment environment built around your existing setup.</p>
+              <button type="button" class="btn btn--accent btn-open-popup">
+                <span>Talk to us</span>
+                <img src="./src/images/icon-arrow-btn.svg" width="20" height="20" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="infra-flow">
+        <div class="container">
+          <div class="rail rail--line infra-flow__rail">
+            <div class="infra-flow__grid">
+              <div class="infra-flow__copy">
+                <div class="infra-flow__heading">
+                  <p class="eyebrow"><span class="eyebrow__dash"></span>Connected payment flow</p>
+                  <h2>
+                    One transaction.
+                    <span class="muted">Several</span>
+                    <span class="accent">connected</span>
+                    <span class="muted">systems.</span>
+                  </h2>
+                </div>
+                <p>A customer sees a payment as one simple action, but several systems can be involved behind it. The payment request moves from your website, application, or payment link through the gateway and processing infrastructure before reaching the relevant bank or card network and returning a transaction response.</p>
+              </div>
+              <div class="infra-flow__list-wrap">
+                <div class="infra-flow__list panel">
+                  <div class="infra-flow__step">
+                    <span>Step 01:</span>
+                    <strong>Customer</strong>
+                  </div>
+                  <div class="infra-flow__step">
+                    <span>Step 02:</span>
+                    <strong>Website / Application / Payment Link</strong>
+                  </div>
+                  <div class="infra-flow__step is-active">
+                    <span>Step 03:</span>
+                    <strong>Payment Gateway</strong>
+                    <i class="infra-flow__dot" aria-hidden="true"></i>
+                  </div>
+                  <div class="infra-flow__step">
+                    <span>Step 04:</span>
+                    <strong>Processing Provider</strong>
+                  </div>
+                  <div class="infra-flow__step">
+                    <span>Step 05:</span>
+                    <strong>Bank / Card Network</strong>
+                  </div>
+                  <div class="infra-flow__step">
+                    <span>Step 06:</span>
+                    <strong>Transaction Response</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="infra-gateway">
+        <div class="container">
+          <div class="rail rail--line infra-gateway__rail">
+            <div class="infra-gateway__head">
+              <div class="infra-gateway__heading">
+                <p class="eyebrow"><span class="eyebrow__dash"></span>Gateway connectivity</p>
+                <h2>The connection behind <span>online payments.</span></h2>
+              </div>
+              <p>The payment gateway connects the customer-facing payment experience with the providers responsible for handling the transaction. It passes payment requests and responses between systems and helps bring checkout and processing into one connected flow.</p>
+            </div>
+            <div class="infra-gateway__row">
+              <div class="infra-gateway__sculpt" aria-hidden="true">
+                <img src="./src/images/infra-sculpt.png" alt="" />
+              </div>
+              <article class="gate-card">
+                <span class="gate-card__index">Option A</span>
+                <div>
+                  <h3>Hosted Payment Page</h3>
+                  <p>Connect customers to a dedicated payment environment without building the full checkout flow from scratch.</p>
+                </div>
+              </article>
+              <article class="gate-card gate-card--alt">
+                <span class="gate-card__index">Option B</span>
+                <div>
+                  <h3>Embedded Payment Flow</h3>
+                  <p>Keep the payment experience closer to your existing website or application, inside the interface your customers already use.</p>
+                </div>
+              </article>
+              <article class="gate-card gate-card--cream">
+                <span class="gate-card__index">Option C</span>
+                <div>
+                  <h3>API Integration</h3>
+                  <p>Integrate payment functionality directly into your own digital environment and existing product flow.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="infra-band" aria-hidden="true">
+        <div class="container">
+          <div class="rail rail--line infra-band__rail">
+            <div class="infra-band__media">
+              <video
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="auto"
+              >
+                <source src="./src/videos/infrastructure-video.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="infra-bento">
+        <div class="container">
+          <div class="rail rail--line infra-bento__rail">
+            <div class="infra-bento__grid">
+              <article class="infra-bento__card">
+                <img src="./src/images/icon-plug.svg" width="36" height="36" alt="" />
+                <div>
+                  <h3><span>Provider</span> <strong>Connectivity</strong></h3>
+                  <p>Connect payment flows with the providers responsible for authorization and transaction processing.</p>
+                </div>
+              </article>
+              <div class="infra-bento__intro">
+                <p class="eyebrow"><span class="eyebrow__dash"></span>Built to connect</p>
+                <h2>More than a single <span>gateway connection.</span></h2>
+                <p>Payment infrastructure brings together the components required to move, process, and manage transactions across different systems and providers.</p>
+              </div>
+              <article class="infra-bento__card">
+                <img src="./src/images/icon-route.svg" width="36" height="36" alt="" />
+                <div>
+                  <h3><span>Transaction</span> <strong>Routing</strong></h3>
+                  <p>Direct payment requests through the available processing setup based on the infrastructure in place.</p>
+                </div>
+              </article>
+              <div class="infra-bento__image" aria-hidden="true">
+                <img src="./src/images/infra-product.png" alt="" />
+              </div>
+              <article class="infra-bento__card">
+                <img src="./src/images/icon-repeat.svg" width="36" height="36" alt="" />
+                <div>
+                  <h3><span>Repeat</span> <strong>Payments</strong></h3>
+                  <p>Support recurring and returning payment flows through tokenization and connected payment functionality.</p>
+                </div>
+              </article>
+              <article class="infra-bento__card">
+                <img src="./src/images/icon-eye.svg" width="36" height="36" alt="" />
+                <div>
+                  <h3><span>Payment</span> <strong>Visibility</strong></h3>
+                  <p>Follow transaction status and payment activity across the connected payment environment.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="infra-flexible">
+        <div class="infra-flexible__bg" aria-hidden="true"></div>
+        <div class="container">
+          <div class="rail rail--line infra-flexible__rail">
+            <div class="infra-flexible__grid">
+              <div class="infra-flexible__heading">
+                <p class="eyebrow"><span class="eyebrow__dash"></span>Flexible infrastructure</p>
+                <h2>Infrastructure that works with your business.</h2>
+              </div>
+              <div class="infra-flexible__panel panel">
+                <p>Every payment environment is different. BLACK DUCK helps businesses build around their existing systems, providers, markets, and customer journeys, connecting the right components without forcing everything into one fixed setup.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="closing-cta closing-cta--split">
+        <div class="container">
+          <div class="rail rail--light closing-cta__rail">
+            <div class="closing-cta__main">
+              <p class="eyebrow eyebrow--cream"><span class="eyebrow__dash"></span>Let’s connect</p>
+              <h2>Build a more connected payment environment.</h2>
+            </div>
+            <div class="closing-cta__aside">
+              <p>Tell us about your current setup, providers, and payment requirements. We can explore the infrastructure that fits your business.</p>
+              <button type="button" class="btn btn--ink btn-open-popup">
+                <span>Talk to us</span>
+                <img src="./src/images/icon-arrow-btn.svg" width="20" height="20" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="rail rail--line footer__rail">
+          <div class="footer__wordmark"><img src="./src/images/wordmark.svg" alt="BLACK DUCK" /></div>
+          <div class="footer__grid">
+            <div class="footer__tagline"><p>Money moves <span class="accent">smarter.</span></p></div>
+            <nav class="footer__nav" aria-label="Footer">
+              <a href="./about.html">About</a>
+              <a href="./index.html#services">Services</a>
+              <a href="./infrastructure.html">Infrastructure</a>
+              <a href="./index.html#solutions">Solutions</a>
+              <a href="./index.html#contact">Contact</a>
+            </nav>
+            <div class="footer__contact">
+              <span class="footer__label">Contact</span>
+              <a href="mailto:info@blackduckpay.com">info@blackduckpay.com</a>
+              <a href="">blackduckpay.com</a>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <p>© 2026 BLACK DUCK. All rights reserved.</p>
+            <div class="footer__legal">
+              <a href="./privacy.html">Privacy Policy</a><span>|</span><a href="./cookie.html">Cookie Policy</a>
+            </div>
+            <button type="button" class="footer__top" aria-label="Back to top" data-back-to-top>
+              <img src="./src/images/icon-arrow.svg" width="24" height="24" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

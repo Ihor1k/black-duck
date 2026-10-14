@@ -1,0 +1,235 @@
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+
+  @media screen and (max-width: 560px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+
+  label {
+    font-family: var(--font-display);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--muted);
+    transition: color 0.16s;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    min-height: 52px;
+    padding: 0 16px;
+    background: var(--near-black);
+    border: 1px solid var(--line);
+    color: var(--on-dark);
+    font-family: var(--font-body);
+    font-size: 14px;
+    line-height: 22px;
+    outline: none;
+    transition: border-color 0.16s;
+
+    &:hover {
+      border-color: var(--muted);
+    }
+
+    &:focus {
+      border-color: var(--accent);
+    }
+  }
+
+  textarea {
+    min-height: 104px;
+    padding: 16px;
+    resize: vertical;
+  }
+
+  &:focus-within label {
+    color: var(--on-dark);
+  }
+}
+
+.form-check {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  flex: 1;
+  min-width: 0;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--on-dark-2);
+
+  input {
+    width: 18px;
+    height: 18px;
+    margin: 2px 0 0;
+    flex-shrink: 0;
+    appearance: none;
+    border: 1px solid var(--line);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12px 12px;
+    cursor: pointer;
+    transition:
+      border-color 0.16s ease,
+      background-color 0.16s ease;
+
+    &:hover {
+      border-color: var(--muted);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+    }
+
+    &:checked {
+      border-color: var(--accent);
+      background-color: var(--accent);
+      // Black check on accent fill (Figma checkbox On)
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='none'%3E%3Cpath d='M2.5 6.2L5 8.7L9.5 3.3' stroke='%23040404' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    }
+  }
+
+  a {
+    color: var(--on-dark);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    width: 100%;
+
+    @media screen and (max-width: 700px) {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 16px;
+    }
+
+    .form-check {
+      flex: 1 1 auto;
+      min-width: 0;
+    }
+
+    .btn {
+      flex: 0 0 168px;
+      width: 168px;
+      max-width: 168px;
+
+      @media screen and (max-width: 700px) {
+        flex: 1 1 auto;
+        width: 100%;
+        max-width: none;
+      }
+    }
+  }
+}
+
+.custom-select {
+  position: relative;
+  width: 100%;
+
+  &__trigger {
+    width: 100%;
+    min-height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+    padding: 0 16px;
+    background: var(--near-black);
+    border: 1px solid var(--line);
+    color: var(--on-dark);
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-size: 14px;
+    text-align: left;
+    transition: border-color 0.16s;
+
+    &:hover {
+      border-color: var(--muted);
+    }
+
+    img {
+      width: 20px;
+      height: 20px;
+      transition: transform 0.2s, filter 0.2s;
+    }
+  }
+
+  &__value:empty::before {
+    // content: "Select";
+    color: var(--muted);
+  }
+
+  &__dropdown {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    right: 0;
+    background: var(--near-black);
+    border: 1px solid var(--border);
+    z-index: 20;
+    display: none;
+    max-height: 240px;
+    overflow: auto;
+  }
+
+  &__options {
+    list-style: none;
+    margin: 0;
+    padding: 8px 0;
+
+    li {
+      padding: 10px 16px;
+      font-family: var(--font-body);
+      font-size: 14px;
+      color: var(--on-dark-2);
+      cursor: pointer;
+
+      &:hover,
+      &.is-selected {
+        color: var(--on-dark);
+        background: var(--charcoal);
+      }
+    }
+  }
+
+  &.is-open {
+    .custom-select__trigger {
+      border-color: var(--accent);
+    }
+
+    .custom-select__trigger img {
+      transform: rotate(180deg);
+      filter: brightness(0) saturate(100%) invert(42%) sepia(79%) saturate(1800%) hue-rotate(346deg);
+    }
+
+    .custom-select__dropdown {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,131 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 24px;
+  min-height: 52px;
+  height: 52px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--on-dark);
+  transition:
+    background-color 0.2s cubic-bezier(0.2, 0.7, 0.2, 1),
+    border-color 0.2s,
+    color 0.2s,
+    transform 0.08s;
+
+  span {
+    white-space: nowrap;
+  }
+
+  svg,
+  img {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    transition: transform 0.2s cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+
+  &:hover svg,
+  &:hover img {
+    transform: translateX(4px);
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--on-dark);
+    outline-offset: 3px;
+  }
+}
+
+.btn--accent {
+  background: var(--accent);
+
+  &:hover {
+    background: #d14a1c;
+  }
+}
+
+.btn--ghost {
+  background: transparent;
+  border: 1px solid var(--border);
+
+  &:hover {
+    border-color: var(--on-dark);
+    background: var(--line-deep);
+  }
+
+  &:focus-visible {
+    outline-color: var(--accent);
+  }
+}
+
+.btn--ink {
+  background: var(--ink);
+
+  &:hover {
+    background: #1a1a1a;
+  }
+
+  &:focus-visible {
+    outline-color: var(--accent);
+  }
+
+  // Keep ink CTA solid when also used as a popup trigger
+  &.header-button {
+    justify-content: space-between;
+    min-height: 52px;
+    padding: 16px 24px;
+    background: var(--ink);
+    border: none;
+    color: var(--on-dark);
+
+    &:hover {
+      background: #1a1a1a;
+      border: none;
+    }
+  }
+}
+
+.btn--sm {
+  min-height: 44px;
+  padding: 12px 20px;
+}
+
+.header-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  min-height: 44px;
+  padding: 12px 20px;
+  background: transparent;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--on-dark);
+  transition: background-color 0.2s, border-color 0.2s;
+
+  &:hover {
+    border-color: var(--on-dark);
+    background: var(--line-deep);
+  }
+}
