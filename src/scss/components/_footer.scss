@@ -23,25 +23,14 @@
 
     @media screen and (max-width: 700px) {
       padding: 24px var(--pad);
-      justify-content: flex-start;
     }
 
     img {
       width: 100%;
-      max-width: 1264px;
+      max-width: none;
       height: auto;
       display: block;
       opacity: 0.95;
-
-      @media screen and (max-width: 700px) {
-        max-width: none;
-        height: 31px;
-        width: auto;
-        max-width: 100%;
-        object-fit: contain;
-        object-position: left center;
-        opacity: 0.35;
-      }
     }
   }
 

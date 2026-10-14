@@ -695,7 +695,7 @@
     }
 
     @media screen and (max-width: 700px) {
-      padding: 0;
+      padding: 48px 0 0;
     }
   }
 
@@ -888,6 +888,12 @@
     @media screen and (max-width: 900px) {
       padding: 64px 0;
     }
+
+    @media screen and (max-width: 700px) {
+      &::before {
+        display: none;
+      }
+    }
   }
 
   &__head {
@@ -1055,6 +1061,12 @@
 
   &__rail {
     @include section-pad;
+
+    @media screen and (max-width: 700px) {
+      &::before {
+        display: none;
+      }
+    }
   }
 
   &__grid {
@@ -1114,7 +1126,7 @@
       }
     }
 
-    > p {
+    > p:not(.eyebrow) {
       margin: 0;
       max-width: 480px;
       font-family: var(--font-body);
@@ -1158,13 +1170,20 @@
     text-decoration: none;
 
     @media screen and (max-width: 700px) {
-      font-size: 16px;
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 500;
       line-height: 24px;
+      border-bottom: 1px solid var(--accent);
     }
 
     &:hover {
       text-decoration: underline;
       text-underline-offset: 4px;
+
+      @media screen and (max-width: 700px) {
+        text-decoration: none;
+      }
     }
   }
 

@@ -187,32 +187,32 @@
                 <p>A customer sees a payment as one simple action, but several systems can be involved behind it. The payment request moves from your website, application, or payment link through the gateway and processing infrastructure before reaching the relevant bank or card network and returning a transaction response.</p>
               </div>
               <div class="infra-flow__list-wrap">
-                <div class="infra-flow__list panel">
-                  <div class="infra-flow__step">
+                <div class="infra-flow__list panel" data-flow-list>
+                  <i class="infra-flow__dot" aria-hidden="true"></i>
+                  <button type="button" class="infra-flow__step" aria-pressed="false">
                     <span>Step 01:</span>
                     <strong>Customer</strong>
-                  </div>
-                  <div class="infra-flow__step">
+                  </button>
+                  <button type="button" class="infra-flow__step" aria-pressed="false">
                     <span>Step 02:</span>
                     <strong>Website / Application / Payment Link</strong>
-                  </div>
-                  <div class="infra-flow__step is-active">
+                  </button>
+                  <button type="button" class="infra-flow__step is-active" aria-pressed="true">
                     <span>Step 03:</span>
                     <strong>Payment Gateway</strong>
-                    <i class="infra-flow__dot" aria-hidden="true"></i>
-                  </div>
-                  <div class="infra-flow__step">
+                  </button>
+                  <button type="button" class="infra-flow__step" aria-pressed="false">
                     <span>Step 04:</span>
                     <strong>Processing Provider</strong>
-                  </div>
-                  <div class="infra-flow__step">
+                  </button>
+                  <button type="button" class="infra-flow__step" aria-pressed="false">
                     <span>Step 05:</span>
                     <strong>Bank / Card Network</strong>
-                  </div>
-                  <div class="infra-flow__step">
+                  </button>
+                  <button type="button" class="infra-flow__step" aria-pressed="false">
                     <span>Step 06:</span>
                     <strong>Transaction Response</strong>
-                  </div>
+                  </button>
                 </div>
               </div>
             </div>

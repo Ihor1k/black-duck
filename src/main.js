@@ -214,6 +214,53 @@ if (sectionIds.length) {
   }
 }
 
+document.querySelectorAll('[data-flow-list]').forEach((list) => {
+  const items = [...list.querySelectorAll('.infra-flow__step')];
+  const indicator = list.querySelector('.infra-flow__dot');
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+  const moveIndicator = (item, instant = false) => {
+    if (!indicator || !item) return;
+
+    const y = item.offsetTop + (item.offsetHeight - indicator.offsetHeight) / 2;
+
+    if (instant || reduceMotion.matches) {
+      const prev = indicator.style.transition;
+      indicator.style.transition = 'none';
+      list.style.setProperty('--flow-y', `${y}px`);
+      void indicator.offsetHeight;
+      indicator.style.transition = prev;
+      return;
+    }
+
+    list.style.setProperty('--flow-y', `${y}px`);
+  };
+
+  const setActive = (item, instant = false) => {
+    items.forEach((other) => {
+      const active = other === item;
+      other.classList.toggle('is-active', active);
+      other.setAttribute('aria-pressed', String(active));
+    });
+    moveIndicator(item, instant);
+  };
+
+  const initial = items.find((item) => item.classList.contains('is-active')) || items[0];
+  if (initial) setActive(initial, true);
+
+  items.forEach((item) => {
+    item.addEventListener('click', () => {
+      if (item.classList.contains('is-active')) return;
+      setActive(item);
+    });
+  });
+
+  window.addEventListener('resize', () => {
+    const active = items.find((item) => item.classList.contains('is-active'));
+    if (active) moveIndicator(active, true);
+  });
+});
+
 document.querySelectorAll('[data-highlight-list]').forEach((list) => {
   const items = [...list.querySelectorAll('.highlight-list__item')];
   const indicator = list.querySelector('.highlight-list__indicator');

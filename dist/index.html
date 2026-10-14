@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script type="module" crossorigin src="./assets/polyfills-E7rTJB-p.js"></script>
+    <script type="module" crossorigin src="./assets/polyfills-CoWW6GfP.js"></script>
 
     <meta charset="UTF-8" />
     <link rel="icon" href="./assets/favicon-light-B9kLJsTK.svg" media="(prefers-color-scheme: light)" type="image/svg+xml" />
     <link rel="icon" href="./assets/favicon-dark-lEKwD2OO.svg" media="(prefers-color-scheme: dark)" type="image/svg+xml" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BLACK DUCK — Payment services for a connected world</title>
+    <title>Black Duck</title>
     <meta name="description" content="Online payments, card processing, business payouts, and cross-border payment solutions for companies operating in digital and international markets." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
-    <script type="module" crossorigin src="./assets/index-Cy-j60bG.js"></script>
-    <link rel="modulepreload" crossorigin href="./assets/main-DwZ_Y12O.js">
-    <link rel="stylesheet" crossorigin href="./assets/main-B24AM8Xy.css">
+    <script type="module" crossorigin src="./assets/index-DbbwYuW_.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/main-Dfw4RLyC.js">
+    <link rel="stylesheet" crossorigin href="./assets/main-LhHz0ZIp.css">
     <script type="module">import.meta.url;import("_").catch(()=>1);(async function*(){})().next();if(location.protocol!="file:"){window.__vite_is_modern_browser=true}</script>
     <script type="module">!function(){if(window.__vite_is_modern_browser)return;console.warn("vite: loading legacy chunks, syntax error above and the same error below should be ignored");var e=document.getElementById("vite-legacy-polyfill"),n=document.createElement("script");n.src=e.src,n.onload=function(){System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))},document.body.appendChild(n)}();</script>
   </head>
@@ -24,117 +24,104 @@
 
     <header class="header">
       <div class="container">
-        <div class="header-inner">
-          <a href="./index.html" class="header-logo" aria-label="BLACK DUCK home">
+                <div class="header-inner">
+          <a href="#hero" class="header-logo" aria-label="BLACK DUCK home">
             <img src="./assets/logo-Buar3f3j.svg" width="132" height="24" alt="BLACK DUCK" />
           </a>
-
-          <button type="button" class="burger" aria-label="Toggle menu" aria-expanded="false">
-            <span class="burger__line"></span>
-            <span class="burger__line"></span>
-            <span class="burger__line"></span>
-          </button>
-
           <nav class="header-menu" aria-label="Primary">
-            <div class="header-menu-bar">
-              <a href="./index.html" class="header-menu-logo">
-                <img src="./assets/logo-Buar3f3j.svg" width="132" height="24" alt="BLACK DUCK" />
-              </a>
-              <button type="button" class="burger-close" aria-label="Close menu">
-                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none" aria-hidden="true">
-                  <path d="M1 22L22 1M1 1L22 22" stroke="#FCFCFC" stroke-width="2" stroke-linecap="round" />
-                </svg>
-              </button>
-            </div>
-            <a href="./index.html" class="header-link is-active" aria-current="page">Home</a>
-            <a href="./about.html" class="header-link">About</a>
-            <a href="#services" class="header-link">Services</a>
-            <a href="./infrastructure.html" class="header-link">Infrastructure</a>
-            <a href="#solutions" class="header-link">Solutions</a>
-            <a href="#contact" class="header-link">Contact</a>
-            <div class="header-buttons mobile-only">
-              <button type="button" class="header-button">Get in touch</button>
+            <div class="header-menu__body">
+              <div class="header-menu__links">
+                <a href="#hero" class="header-link is-active" aria-current="page" data-nav-section="hero"><span>Home</span></a>
+                <a href="#about" class="header-link" data-nav-section="about"><span>About</span></a>
+                <a href="#services" class="header-link" data-nav-section="services"><span>Services</span></a>
+                <a href="#infrastructure" class="header-link" data-nav-section="infrastructure"><span>Infrastructure</span></a>
+                <a href="#solutions" class="header-link" data-nav-section="solutions"><span>Solutions</span></a>
+                <a href="#contact" class="header-link" data-nav-section="contact"><span>Contact</span></a>
+              </div>
+              <div class="header-menu__contact">
+                <span>Contact</span>
+                <a href="mailto:info@blackduckpay.com">info@blackduckpay.com</a>
+                <a href="">blackduckpay.com</a>
+              </div>
             </div>
           </nav>
-
-          <div class="header-buttons desktop-only">
+          <div class="header-actions">
             <button type="button" class="header-button">Get in touch</button>
+            <button type="button" class="burger" aria-label="Toggle menu" aria-expanded="false">
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+            </button>
           </div>
         </div>
       </div>
     </header>
-
     <div class="popup-overlay" id="popup">
-      <div class="popup" role="dialog" aria-modal="true" aria-labelledby="popup-title">
-        <button type="button" class="close-popup" aria-label="Close popup">
-          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-            <path d="M1 13L13 1M1 1L13 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-          </svg>
-        </button>
-        <div class="popup-block">
-          <div class="popup-inner">
-            <div class="popup-context">
-              <p class="eyebrow"><span class="eyebrow__dash"></span>Get in touch</p>
-              <h3 id="popup-title">Tell us about your payment needs.</h3>
-              <p class="pop-text">
-                Share a few details about your business, current payment setup, and what you are looking to improve or introduce.
-              </p>
-            </div>
-            <form class="popup-form" id="joinForm">
-              <div class="form-row">
-                <div class="form-field">
-                  <label for="popup-name">Name</label>
-                  <input type="text" id="popup-name" name="name" required />
-                </div>
-                <div class="form-field">
-                  <label for="popup-company">Company</label>
-                  <input type="text" id="popup-company" name="company" />
-                </div>
+      <div class="popup panel" role="dialog" aria-modal="true" aria-labelledby="popup-title">
+        <div class="popup-inner">
+          <div class="popup-header">
+            <p class="eyebrow"><span class="eyebrow__dash"></span>Get in touch</p>
+            <button type="button" class="close-popup" aria-label="Close popup">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 13L13 1M1 1L13 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </button>
+          </div>
+          <div class="popup-context">
+            <h3 id="popup-title">Tell us about your payment needs.</h3>
+            <p class="pop-text">Share a few details about your business, current payment setup, and what you are looking to improve or introduce. The BLACK DUCK team can review your requirements and get back to you with relevant next steps.</p>
+          </div>
+          <form class="popup-form" id="joinForm">
+            <div class="form-row form-row--name">
+              <div class="form-field">
+                <label for="popup-name">Name</label>
+                <input type="text" id="popup-name" name="name" required />
               </div>
-              <div class="form-row">
-                <div class="form-field">
-                  <label for="popup-email">Business email</label>
-                  <input type="email" id="popup-email" name="email" required />
-                </div>
-                <div class="form-field">
-                  <label for="popup-interest">Service of interest</label>
-                  <div class="custom-select">
-                    <input type="hidden" name="interest" value="" />
-                    <button type="button" class="custom-select__trigger" aria-haspopup="listbox" aria-expanded="false">
-                      <span class="custom-select__value"></span>
-                      <img src="data:image/svg+xml,%3csvg%20preserveAspectRatio='none'%20overflow='visible'%20style='display:%20block;'%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Chevron'%3e%3cpath%20id='Vector'%20d='M5%208L10%2013L15%208'%20stroke='%238A8A8A'/%3e%3c/g%3e%3c/svg%3e" width="20" height="20" alt="" />
-                    </button>
-                    <div class="custom-select__dropdown">
-                      <ul class="custom-select__options" role="listbox">
-                        <li role="option" data-value="online-payments">Online Payments</li>
-                        <li role="option" data-value="card-payments">Card Payments</li>
-                        <li role="option" data-value="payment-processing">Payment Processing</li>
-                        <li role="option" data-value="business-payouts">Business Payouts</li>
-                        <li role="option" data-value="multi-currency">Multi-Currency &amp; Cross-Border</li>
-                        <li role="option" data-value="payment-links">Payment Links</li>
-                        <li role="option" data-value="payment-gateway">Payment Gateway</li>
-                        <li role="option" data-value="other">Other</li>
-                      </ul>
-                    </div>
+              <div class="form-field">
+                <label for="popup-company">Company</label>
+                <input type="text" id="popup-company" name="company" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="popup-email">Business email</label>
+                <input type="email" id="popup-email" name="email" required />
+              </div>
+              <div class="form-field">
+                <label for="popup-interest">Service of interest</label>
+                <div class="custom-select">
+                  <input type="hidden" name="interest" value="" />
+                  <button type="button" class="custom-select__trigger" aria-haspopup="listbox" aria-expanded="false">
+                    <span class="custom-select__value"></span>
+                    <img src="data:image/svg+xml,%3csvg%20preserveAspectRatio='none'%20overflow='visible'%20style='display:%20block;'%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Chevron'%3e%3cpath%20id='Vector'%20d='M5%208L10%2013L15%208'%20stroke='%238A8A8A'/%3e%3c/g%3e%3c/svg%3e" width="20" height="20" alt="" />
+                  </button>
+                  <div class="custom-select__dropdown">
+                    <ul class="custom-select__options" role="listbox">
+                      <li role="option" data-value="online-payments">Online Payments</li>
+                      <li role="option" data-value="card-payments">Card Payments</li>
+                      <li role="option" data-value="payment-processing">Payment Processing</li>
+                      <li role="option" data-value="business-payouts">Business Payouts</li>
+                      <li role="option" data-value="multi-currency">Multi-Currency &amp; Cross-Border</li>
+                      <li role="option" data-value="payment-links">Payment Links</li>
+                      <li role="option" data-value="payment-gateway">Payment Gateway</li>
+                      <li role="option" data-value="other">Other</li>
+                    </ul>
                   </div>
                 </div>
               </div>
-              <div class="form-field">
-                <label for="popup-message">Message</label>
-                <textarea id="popup-message" name="message" rows="3" required></textarea>
-              </div>
-              <div class="popup-wrapper">
-                <label class="form-check">
-                  <input type="checkbox" name="privacy" required />
-                  <span>I agree to the processing of my personal data in accordance with the <a href="./privacy.html">Privacy Policy</a>.</span>
-                </label>
-                <button type="submit" class="btn btn--accent">
-                  <span>Send request</span>
-                  <img src="data:image/svg+xml,%3csvg%20preserveAspectRatio='none'%20overflow='visible'%20style='display:%20block;'%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Icon%20&%23194;&%23183;%20Arrow'%3e%3cpath%20id='Vector'%20d='M3%2010H17M11.9091%2015L17%2010L11.9091%205'%20stroke='%23FCFCFC'/%3e%3c/g%3e%3c/svg%3e" width="20" height="20" alt="" />
-                </button>
-              </div>
-            </form>
-          </div>
+            </div>
+            <div class="form-field">
+              <label for="popup-message">Message</label>
+              <textarea id="popup-message" name="message" rows="3" required></textarea>
+            </div>
+            <div class="popup-wrapper">
+              <label class="form-check">
+                <input type="checkbox" name="privacy" required />
+                <span>I agree to the processing of my personal data in accordance with the <a href="./privacy.html">Privacy Policy</a>.</span>
+              </label>
+              <button type="submit" class="btn btn--accent">
+                <span>Send request</span>
+                <img src="data:image/svg+xml,%3csvg%20preserveAspectRatio='none'%20overflow='visible'%20style='display:%20block;'%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Icon%20&%23194;&%23183;%20Arrow'%3e%3cpath%20id='Vector'%20d='M3%2010H17M11.9091%2015L17%2010L11.9091%205'%20stroke='%23FCFCFC'/%3e%3c/g%3e%3c/svg%3e" width="20" height="20" alt="" />
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
@@ -142,29 +129,44 @@
     <main>
       <!-- HERO -->
       <section class="hero" id="hero">
-        <div class="hero__media" aria-hidden="true">
-          <img src="./assets/hero-shield-CmPFCc7b.png" alt="" />
-        </div>
-        <div class="hero__fade hero__fade--bottom" aria-hidden="true"></div>
-        <div class="hero__fade hero__fade--side" aria-hidden="true"></div>
-        <div class="container">
+        <div class="container hero__container">
+          <div class="hero__media" aria-hidden="true">
+            <div class="video">
+              <video
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="auto"
+                poster="./assets/hero-shield-CmPFCc7b.png"
+              >
+                <source src="./videos/hero-video.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+          <div class="hero__fade hero__fade--bottom" aria-hidden="true"></div>
+          <div class="hero__fade hero__fade--side" aria-hidden="true"></div>
+
           <div class="rail hero__rail">
             <p class="hero__vertical" aria-hidden="true"><span>/</span> Online payments</p>
+
             <div class="hero__top">
               <div class="hero__intro">
-                <h1 class="hero__brand">
+                <p class="hero__brand">
                   <span>Black Duck.</span>
                   <span>Money moves smarter.</span>
-                </h1>
+                </p>
                 <p class="hero__lead">
                   Online payments, card processing, business payouts, and cross-border payment solutions for companies operating in digital and international markets. BLACK DUCK helps businesses build practical payment flows around their customers, operations, currencies, and existing infrastructure.
                 </p>
               </div>
             </div>
+
             <div class="hero__bottom">
-              <p class="hero__title">
-                Payment services for a <span>connected world.</span>
-              </p>
+              <h1 class="hero__title">
+                <span class="hero__title-line">Payment services for a</span>
+                <span class="hero__title-line hero__title-line--muted">connected world.</span>
+              </h1>
               <div class="hero__actions">
                 <a href="#services" class="btn btn--accent">
                   <span>Explore our services</span>
@@ -229,7 +231,12 @@
                   <button type="button" class="acc-item__header" aria-expanded="true">
                     <span class="acc-item__label">Online payments:</span>
                     <span class="acc-item__value">Accept payments online.</span>
-                    <span class="acc-item__icon" aria-hidden="true"></span>
+                    <span class="acc-item__icon" aria-hidden="true">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect class="acc-item__icon-v" x="7" y="0" width="1" height="16" />
+                        <rect class="acc-item__icon-h" x="0" y="7" width="16" height="1" />
+                      </svg>
+                    </span>
                   </button>
                   <div class="acc-item__body">
                     <p>Payment acceptance solutions for websites, applications, and other digital environments. We help businesses establish online payment flows that fit their customer journey, operating markets, currencies, and existing technical setup.</p>
@@ -239,7 +246,12 @@
                   <button type="button" class="acc-item__header" aria-expanded="false">
                     <span class="acc-item__label">Card payments:</span>
                     <span class="acc-item__value">Add cards to checkout.</span>
-                    <span class="acc-item__icon" aria-hidden="true"></span>
+                    <span class="acc-item__icon" aria-hidden="true">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect class="acc-item__icon-v" x="7" y="0" width="1" height="16" />
+                        <rect class="acc-item__icon-h" x="0" y="7" width="16" height="1" />
+                      </svg>
+                    </span>
                   </button>
                   <div class="acc-item__body">
                     <p>Card payment solutions for businesses selling products and services online. BLACK DUCK helps companies connect card acceptance with the processing and payment infrastructure required to handle transactions across digital checkout environments.</p>
@@ -249,7 +261,12 @@
                   <button type="button" class="acc-item__header" aria-expanded="false">
                     <span class="acc-item__label">Payment processing:</span>
                     <span class="acc-item__value">Keep transactions moving.</span>
-                    <span class="acc-item__icon" aria-hidden="true"></span>
+                    <span class="acc-item__icon" aria-hidden="true">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect class="acc-item__icon-v" x="7" y="0" width="1" height="16" />
+                        <rect class="acc-item__icon-h" x="0" y="7" width="16" height="1" />
+                      </svg>
+                    </span>
                   </button>
                   <div class="acc-item__body">
                     <p>Payment processing connects customer payments with the infrastructure responsible for authorization, transaction handling, and confirmation. We help businesses explore processing arrangements suited to their payment volumes, markets, currencies, and operational requirements.</p>
@@ -259,7 +276,12 @@
                   <button type="button" class="acc-item__header" aria-expanded="false">
                     <span class="acc-item__label">Business payouts:</span>
                     <span class="acc-item__value">Pay partners and suppliers.</span>
-                    <span class="acc-item__icon" aria-hidden="true"></span>
+                    <span class="acc-item__icon" aria-hidden="true">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect class="acc-item__icon-v" x="7" y="0" width="1" height="16" />
+                        <rect class="acc-item__icon-h" x="0" y="7" width="16" height="1" />
+                      </svg>
+                    </span>
                   </button>
                   <div class="acc-item__body">
                     <p>Payment services for outgoing transfers to partners, suppliers, contractors, and other business recipients. We help companies structure payout flows around payment destinations, currencies, transaction frequency, and the way funds move through the business.</p>
@@ -269,7 +291,12 @@
                   <button type="button" class="acc-item__header" aria-expanded="false">
                     <span class="acc-item__label">Multi-currency &amp; cross-border:</span>
                     <span class="acc-item__value">Move money across markets.</span>
-                    <span class="acc-item__icon" aria-hidden="true"></span>
+                    <span class="acc-item__icon" aria-hidden="true">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect class="acc-item__icon-v" x="7" y="0" width="1" height="16" />
+                        <rect class="acc-item__icon-h" x="0" y="7" width="16" height="1" />
+                      </svg>
+                    </span>
                   </button>
                   <div class="acc-item__body">
                     <p>Solutions for businesses receiving and sending money internationally. BLACK DUCK helps companies manage payment activity across different currencies and markets while supporting relationships with international customers, partners, and suppliers.</p>
@@ -279,7 +306,12 @@
                   <button type="button" class="acc-item__header" aria-expanded="false">
                     <span class="acc-item__label">Payment links:</span>
                     <span class="acc-item__value">Get paid by link.</span>
-                    <span class="acc-item__icon" aria-hidden="true"></span>
+                    <span class="acc-item__icon" aria-hidden="true">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect class="acc-item__icon-v" x="7" y="0" width="1" height="16" />
+                        <rect class="acc-item__icon-h" x="0" y="7" width="16" height="1" />
+                      </svg>
+                    </span>
                   </button>
                   <div class="acc-item__body">
                     <p>Payment links provide businesses with another way to initiate online transactions without relying exclusively on a traditional website checkout. They can support flexible payment journeys across sales, service, and digital communication channels.</p>
@@ -399,7 +431,18 @@
                 </div>
               </article>
               <div class="sol-card sol-card--media">
-                <img src="./assets/solutions-earth-CW5_qGMR.png" alt="" />
+                <div class="video">
+                  <video
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    preload="auto"
+                    poster="./assets/solutions-earth-CW5_qGMR.png"
+                  >
+                    <source src="./assets/solutions-video-CbtjPkok.mp4" type="video/mp4" />
+                  </video>
+                </div>
               </div>
               <article class="sol-card sol-card--cream">
                 <img src="data:image/svg+xml,%3csvg%20preserveAspectRatio='none'%20overflow='visible'%20style='display:%20block;'%20width='28'%20height='28'%20viewBox='0%200%2028%2028'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Glyph'%3e%3cpath%20id='Base'%20d='M14%203L9%2014L14%2025M14%203L19%2014L14%2025M9%203H19L25%209V19L19%2025H9L3%2019V9L9%203Z'%20stroke='%23040404'/%3e%3cpath%20id='Accent'%20d='M3%2014H25'%20stroke='%23E55723'/%3e%3c/g%3e%3c/svg%3e" width="36" height="36" alt="" />
@@ -470,22 +513,25 @@
           <div class="rail contact__rail">
             <div class="contact__grid">
               <div class="contact__copy">
-                <p class="eyebrow"><span class="eyebrow__dash"></span>Contact</p>
-                <h2>Let’s stay <span class="accent">connected.</span></h2>
-                <p>Whether you are looking to accept online payments, process card transactions, connect a payment gateway, manage business payouts, or operate across multiple markets, BLACK DUCK can help you explore payment options built around your business.</p>
+                <div class="contact__intro">
+                  <p class="eyebrow"><span class="eyebrow__dash"></span>Contact</p>
+                  <h2>Let’s stay <span class="accent">connected.</span></h2>
+                  <p>Whether you are looking to accept online payments, process card transactions, connect a payment gateway, manage business payouts, or operate across multiple markets, BLACK DUCK can help you explore payment options built around your business.</p>
+                </div>
                 <div class="contact__cta">
                   <p class="lead-light">Tell us how your business moves money, and we can start the conversation from there.</p>
                   <a class="contact__email" href="mailto:info@blackduckpay.com">info@blackduckpay.com</a>
                 </div>
               </div>
-              <div class="contact__form-wrap panel panel--form">
+              <div class="contact__form-col">
+                <div class="contact__form-wrap panel panel--form">
                 <div class="contact__form-head">
                   <p class="eyebrow"><span class="eyebrow__dash"></span>Get in touch</p>
                   <h3>Tell us about your payment needs.</h3>
                   <p>Share a few details about your business, current payment setup, and what you are looking to improve or introduce. The BLACK DUCK team can review your requirements and get back to you with relevant next steps.</p>
                 </div>
                 <form class="contact-form" id="contactForm">
-                  <div class="form-row">
+                  <div class="form-row form-row--name">
                     <div class="form-field">
                       <label for="name">Name</label>
                       <input type="text" id="name" name="name" required />
@@ -539,6 +585,7 @@
                   </div>
                 </form>
               </div>
+              </div>
             </div>
           </div>
         </div>
@@ -565,7 +612,7 @@
             <div class="footer__contact">
               <span class="footer__label">Contact</span>
               <a href="mailto:info@blackduckpay.com">info@blackduckpay.com</a>
-              <a href="https://blackduckpay.com">blackduckpay.com</a>
+              <a href="">blackduckpay.com</a>
             </div>
           </div>
           <div class="footer__bottom">
@@ -576,7 +623,7 @@
               <a href="./cookie.html">Cookie Policy</a>
             </div>
             <button type="button" class="footer__top" aria-label="Back to top" data-back-to-top>
-              <img src="data:image/svg+xml,%3csvg%20preserveAspectRatio='none'%20overflow='visible'%20style='display:%20block;'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Icon%20&%23194;&%23183;%20Arrow'%3e%3cpath%20id='Vector'%20d='M12%2021V4M19%2011.2857L12%204L5%2011.2857'%20stroke='%23E55723'/%3e%3c/g%3e%3c/svg%3e" width="24" height="24" alt="" />
+              <img src="data:image/svg+xml,%3csvg%20width='15'%20height='18'%20viewBox='0%200%2015%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M7.36035%2017.7217V0.72168M14.3604%208.00739L7.36035%200.72168L0.360352%208.00739'%20stroke='%23E55723'/%3e%3c/svg%3e" width="24" height="24" alt="" />
             </button>
           </div>
         </div>
@@ -585,6 +632,6 @@
 
     <script nomodule>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
     <script nomodule crossorigin id="vite-legacy-polyfill" src="./assets/polyfills-legacy-gIId5ATx.js"></script>
-    <script nomodule crossorigin id="vite-legacy-entry" data-src="./assets/index-legacy-B5IV8wfa.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
+    <script nomodule crossorigin id="vite-legacy-entry" data-src="./assets/index-legacy-pDQPaSiJ.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
   </body>
 </html>
