@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script type="module" crossorigin src="./assets/polyfills-CoWW6GfP.js"></script>
+
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./assets/favicon-light-B9kLJsTK.svg" media="(prefers-color-scheme: light)" type="image/svg+xml" />
+    <link rel="icon" href="./assets/favicon-dark-lEKwD2OO.svg" media="(prefers-color-scheme: dark)" type="image/svg+xml" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Black Duck</title>
+    <meta name="description" content="Online payments, card processing, business payouts, and cross-border payment solutions for companies operating in digital and international markets." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
+    <script type="module" crossorigin src="./assets/index-DbbwYuW_.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/main-Dfw4RLyC.js">
+    <link rel="stylesheet" crossorigin href="./assets/main-LhHz0ZIp.css">
+    <script type="module">import.meta.url;import("_").catch(()=>1);(async function*(){})().next();if(location.protocol!="file:"){window.__vite_is_modern_browser=true}</script>
+    <script type="module">!function(){if(window.__vite_is_modern_browser)return;console.warn("vite: loading legacy chunks, syntax error above and the same error below should be ignored");var e=document.getElementById("vite-legacy-polyfill"),n=document.createElement("script");n.src=e.src,n.onload=function(){System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))},document.body.appendChild(n)}();</script>
+  </head>
+  <body>
+    <div class="menu-overlay"></div>
+
+    <header class="header">
+      <div class="container">
+                <div class="header-inner">
+          <a href="#hero" class="header-logo" aria-label="BLACK DUCK home">
+            <img src="./assets/logo-Buar3f3j.svg" width="132" height="24" alt="BLACK DUCK" />
+          </a>
+          <nav class="header-menu" aria-label="Primary">
+            <div class="header-menu__body">
+              <div class="header-menu__links">
+                <a href="#hero" class="header-link is-active" aria-current="page" data-nav-section="hero"><span>Home</span></a>
+                <a href="#about" class="header-link" data-nav-section="about"><span>About</span></a>
+                <a href="#services" class="header-link" data-nav-section="services"><span>Services</span></a>
+                <a href="#infrastructure" class="header-link" data-nav-section="infrastructure"><span>Infrastructure</span></a>
+                <a href="#solutions" class="header-link" data-nav-section="solutions"><span>Solutions</span></a>
+                <a href="#contact" class="header-link" data-nav-section="contact"><span>Contact</span></a>
+              </div>
+              <div class="header-menu__contact">
+                <span>Contact</span>
+                <a href="mailto:info@blackduckpay.com">info@blackduckpay.com</a>
+                <a href="">blackduckpay.com</a>
+              </div>
+            </div>
+          </nav>
+          <div class="header-actions">
+            <button type="button" class="header-button">Get in touch</button>
+            <button type="button" class="burger" aria-label="Toggle menu" aria-expanded="false">
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="popup-overlay" id="popup">
+      <div class="popup panel" role="dialog" aria-modal="true" aria-labelledby="popup-title">
+        <div class="popup-inner">
+          <div class="popup-header">
+            <p class="eyebrow"><span class="eyebrow__dash"></span>Get in touch</p>
+            <button type="button" class="close-popup" aria-label="Close popup">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 13L13 1M1 1L13 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </button>
+          </div>
+          <div class="popup-context">
+            <h3 id="popup-title">Tell us about your payment needs.</h3>
+            <p class="pop-text">Share a few details about your business, current payment setup, and what you are looking to improve or introduce. The BLACK DUCK team can review your requirements and get back to you with relevant next steps.</p>
+          </div>
+          <form class="popup-form" id="joinForm">
+            <div class="form-row form-row--name">
+              <div class="form-field">
+                <label for="popup-name">Name</label>
+                <input type="text" id="popup-name" name="name" required />
+              </div>
+              <div class="form-field">
+                <label for="popup-company">Company</label>
+                <input type="text" id="popup-company" name="company" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="popup-email">Business email</label>
+                <input type="email" id="popup-email" name="email" required />
+              </div>
+              <div class="form-field">
+                <label for="popup-interest">Service of interest</label>
+                <div class="custom-select">
+                  <input type="hidden" name="interest" value="" />
+                  <button type="button" class="custom-select__trigger" aria-haspopup="listbox" aria-expanded="false">
+                    <span class="custom-select__value"></span>
+                    <img src="data:image/svg+xml,%3csvg%20preserveAspectRatio='none'%20overflow='visible'%20style='display:%20block;'%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Chevron'%3e%3cpath%20id='Vector'%20d='M5%208L10%2013L15%208'%20stroke='%238A8A8A'/%3e%3c/g%3e%3c/svg%3e" width="20" height="20" alt="" />
+                  </button>
+                  <div class="custom-select__dropdown">
+                    <ul class="custom-select__options" role="listbox">
+                      <li role="option" data-value="online-payments">Online Payments</li>
+                      <li role="option" data-value="card-payments">Card Payments</li>
+                      <li role="option" data-value="payment-processing">Payment Processing</li>
+                      <li role="option" data-value="business-payouts">Business Payouts</li>
+                      <li role="option" data-value="multi-currency">Multi-Currency &amp; Cross-Border</li>
+                      <li role="option" data-value="payment-links">Payment Links</li>
+                      <li role="option" data-value="payment-gateway">Payment Gateway</li>
+                      <li role="option" data-value="other">Other</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="popup-message">Message</label>
+              <textarea id="popup-message" name="message" rows="3" required></textarea>
+            </div>
+            <div class="popup-wrapper">
+              <label class="form-check">
+                <input type="checkbox" name="privacy" required />
+                <span>I agree to the processing of my personal data in accordance with the <a href="./privacy.html">Privacy Policy</a>.</span>
+              </label>
+              <button type="submit" class="btn btn--accent">
+                <span>Send request</span>
+                <img src="data:image/svg+xml,%3csvg%20preserveAspectRatio='none'%20overflow='visible'%20style='display:%20block;'%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Icon%20&%23194;&%23183;%20Arrow'%3e%3cpath%20id='Vector'%20d='M3%2010H17M11.9091%2015L17%2010L11.9091%205'%20stroke='%23FCFCFC'/%3e%3c/g%3e%3c/svg%3e" width="20" height="20" alt="" />
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero" id="hero">
+        <div class="container hero__container">
+          <div class="hero__media" aria-hidden="true">
+            <div class="video">
+              <video
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="auto"
+                poster="./assets/hero-shield-CmPFCc7b.png"
+              >
+                <source src="./videos/hero-video.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+          <div class="hero__fade hero__fade--bottom" aria-hidden="true"></div>
+          <div class="hero__fade hero__fade--side" aria-hidden="true"></div>
+
+          <div class="rail hero__rail">
+            <p class="hero__vertical" aria-hidden="true"><span>/</span> Online payments</p>
+
+            <div class="hero__top">
+              <div class="hero__intro">
+                <p class="hero__brand">
+                  <span>Black Duck.</span>
+                  <span>Money moves smarter.</span>
+                </p>
+                <p class="hero__lead">
+                  Online payments, card processing, business payouts, and cross-border payment solutions for companies operating in digital and international markets. BLACK DUCK helps businesses build practical payment flows around their customers, operations, currencies, and existing infrastructure.
+                </p>
+              </div>
+            </div>
+
+            <div class="hero__bottom">
+              <h1 class="hero__title">
+                <span class="hero__title-line">Payment services for a</span>
+                <span class="hero__title-line hero__title-line--muted">connected world.</span>
+              </h1>
+              <div class="hero__actions">
+                <a href="#services" class="btn btn--accent">
+                  <span>Explore our services</span>
+                  <img src="data:image/svg+xml,%3csvg%20preserveAspectRatio='none'%20overflow='visible'%20style='display:%20block;'%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Icon%20&%23194;&%23183;%20Arrow'%3e%3cpath%20id='Vector'%20d='M3%2010H17M11.9091%2015L17%2010L11.9091%205'%20stroke='%23FCFCFC'/%3e%3c/g%3e%3c/svg%3e" width="20" height="20" alt="" />
+                </a>
+                <a href="#contact" class="btn btn--ghost">Contact us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT TEASER -->
+      <section class="about-teaser" id="about">
+        <div class="container">
+          <div class="rail rail--light about-teaser__rail">
+            <div class="about-teaser__grid">
+              <div class="about-teaser__eyebrow">
+                <p class="eyebrow eyebrow--cream"><span class="eyebrow__dash"></span>About us</p>
+              </div>
+              <div class="about-teaser__main">
+                <h2>A business-first perspective on payments.</h2>
+                <p class="lead"><strong>BLACK DUCK</strong> is focused on payment services for companies operating online and internationally. We help businesses explore payment options that fit their activities, customers, markets, and existing infrastructure.</p>
+                <p>Every business has its own payment requirements. An online retailer accepting customer payments faces different challenges from a company managing international supplier transfers, processing card transactions, or operating across several currencies.</p>
+              </div>
+              <div class="about-teaser__aside">
+                <p>We bring a practical perspective to payments, starting with how the business actually operates. From there, we help identify suitable payment flows, processing options, and connections that support everyday operations and future growth.</p>
+                <a href="./about.html" class="btn btn--ink">
+                  <span>Discover Black Duck</span>
+                  <img src="data:image/svg+xml,%3csvg%20preserveAspectRatio='none'%20overflow='visible'%20style='display:%20block;'%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Icon%20&%23194;&%23183;%20Arrow'%3e%3cpath%20id='Vector'%20d='M3%2010H17M11.9091%2015L17%2010L11.9091%205'%20stroke='%23FCFCFC'/%3e%3c/g%3e%3c/svg%3e" width="20" height="20" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section class="services" id="services">
+        <div class="container">
+          <div class="rail rail--dark services__rail">
+            <div class="services__grid">
+              <div class="services__copy">
+                <div class="services__intro">
+                  <p class="eyebrow"><span class="eyebrow__dash"></span>Our services</p>
+                  <h2>
+                    Supporting the way <span class="muted">businesses</span>
+                    <span class="accent">move</span> <span class="muted">money.</span>
+                  </h2>
+                </div>
+                <div class="services__bottom">
+                  <div class="services__visual">
+                    <img src="./assets/services-visual-CyMNRb_W.png" alt="" />
+                  </div>
+                  <p>
+                    BLACK DUCK provides payment services across different stages of the transaction lifecycle — from accepting a customer payment to processing the transaction, moving funds internationally, and paying partners or suppliers.
+                  </p>
+                </div>
+              </div>
+              <div class="services__accordion panel" data-accordion>
+                <div class="acc-item is-open">
+                  <button type="button" class="acc-item__header" aria-expanded="true">
+                    <span class="acc-item__label">Online payments:</span>
+                    <span class="acc-item__value">Accept payments online.</span>
+                    <span class="acc-item__icon" aria-hidden="true">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect class="acc-item__icon-v" x="7" y="0" width="1" height="16" />
+                        <rect class="acc-item__icon-h" x="0" y="7" width="16" height="1" />
+                      </svg>
+                    </span>
+                  </button>
+                  <div class="acc-item__body">
+                    <p>Payment acceptance solutions for websites, applications, and other digital environments. We help businesses establish online payment flows that fit their customer journey, operating markets, currencies, and existing technical setup.</p>
+                  </div>
+                </div>
+                <div class="acc-item">
+                  <button type="button" class="acc-item__header" aria-expanded="false">
+                    <span class="acc-item__label">Card payments:</span>
+                    <span class="acc-item__value">Add cards to checkout.</span>
+                    <span class="acc-item__icon" aria-hidden="true">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect class="acc-item__icon-v" x="7" y="0" width="1" height="16" />
+                        <rect class="acc-item__icon-h" x="0" y="7" width="16" height="1" />
+                      </svg>
+                    </span>
+                  </button>
+                  <div class="acc-item__body">
+                    <p>Card payment solutions for businesses selling products and services online. BLACK DUCK helps companies connect card acceptance with the processing and payment infrastructure required to handle transactions across digital checkout environments.</p>
+                  </div>
+                </div>
+                <div class="acc-item">
+                  <button type="button" class="acc-item__header" aria-expanded="false">
+                    <span class="acc-item__label">Payment processing:</span>
+                    <span class="acc-item__value">Keep transactions moving.</span>
+                    <span class="acc-item__icon" aria-hidden="true">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect class="acc-item__icon-v" x="7" y="0" width="1" height="16" />
+                        <rect class="acc-item__icon-h" x="0" y="7" width="16" height="1" />
+                      </svg>
+                    </span>
+                  </button>
+                  <div class="acc-item__body">
+                    <p>Payment processing connects customer payments with the infrastructure responsible for authorization, transaction handling, and confirmation. We help businesses explore processing arrangements suited to their payment volumes, markets, currencies, and operational requirements.</p>
+                  </div>
+                </div>
+                <div class="acc-item">
+                  <button type="button" class="acc-item__header" aria-expanded="false">
+                    <span class="acc-item__label">Business payouts:</span>
+                    <span class="acc-item__value">Pay partners and suppliers.</span>
+                    <span class="acc-item__icon" aria-hidden="true">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect class="acc-item__icon-v" x="7" y="0" width="1" height="16" />
+                        <rect class="acc-item__icon-h" x="0" y="7" width="16" height="1" />
+                      </svg>
+                    </span>
+                  </button>
+                  <div class="acc-item__body">
+                    <p>Payment services for outgoing transfers to partners, suppliers, contractors, and other business recipients. We help companies structure payout flows around payment destinations, currencies, transaction frequency, and the way funds move through the business.</p>
+                  </div>
+                </div>
+                <div class="acc-item">
+                  <button type="button" class="acc-item__header" aria-expanded="false">
+                    <span class="acc-item__label">Multi-currency &amp; cross-border:</span>
+                    <span class="acc-item__value">Move money across markets.</span>
+                    <span class="acc-item__icon" aria-hidden="true">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect class="acc-item__icon-v" x="7" y="0" width="1" height="16" />
+                        <rect class="acc-item__icon-h" x="0" y="7" width="16" height="1" />
+                      </svg>
+                    </span>
+                  </button>
+                  <div class="acc-item__body">
+                    <p>Solutions for businesses receiving and sending money internationally. BLACK DUCK helps companies manage payment activity across different currencies and markets while supporting relationships with international customers, partners, and suppliers.</p>
+                  </div>
+                </div>
+                <div class="acc-item">
+                  <button type="button" class="acc-item__header" aria-expanded="false">
+                    <span class="acc-item__label">Payment links:</span>
+                    <span class="acc-item__value">Get paid by link.</span>
+                    <span class="acc-item__icon" aria-hidden="true">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect class="acc-item__icon-v" x="7" y="0" width="1" height="16" />
+                        <rect class="acc-item__icon-h" x="0" y="7" width="16" height="1" />
+                      </svg>
+                    </span>
+                  </button>
+                  <div class="acc-item__body">
+                    <p>Payment links provide businesses with another way to initiate online transactions without relying exclusively on a traditional website checkout. They can support flexible payment journeys across sales, service, and digital communication channels.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- INFRASTRUCTURE -->
+      <section class="infra" id="infrastructure">
+        <div class="container">
+          <div class="rail rail--line infra__rail">
+            <div class="infra__head">
+              <div class="infra__title-col">
+                <p class="eyebrow"><span class="eyebrow__dash"></span>Payment infrastructure</p>
+                <h2>The systems behind every payment.</h2>
+              </div>
+              <div class="infra__text-col">
+                <p>A payment depends on more than the checkout itself. Gateways, processing providers, banking infrastructure, routing, and transaction responses all need to work together. BLACK DUCK helps businesses connect these elements into one payment environment built around the way they operate.</p>
+                <a href="./infrastructure.html" class="btn btn--accent">
+                  <span>Explore infrastructure</span>
+                  <img src="data:image/svg+xml,%3csvg%20preserveAspectRatio='none'%20overflow='visible'%20style='display:%20block;'%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Icon%20&%23194;&%23183;%20Arrow'%3e%3cpath%20id='Vector'%20d='M3%2010H17M11.9091%2015L17%2010L11.9091%205'%20stroke='%23FCFCFC'/%3e%3c/g%3e%3c/svg%3e" width="20" height="20" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="infra__cards">
+              <article class="infra-card">
+                <span class="infra-card__index">01</span>
+                <div>
+                  <h3>Payment Gateway</h3>
+                  <p>Link your website, app, or payment link to the providers that process transactions and return responses.</p>
+                </div>
+              </article>
+              <article class="infra-card infra-card--dark">
+                <span class="infra-card__index">02</span>
+                <div>
+                  <h3>Processing Connectivity</h3>
+                  <p>Reliable connections between customer payment flows and the providers handling authorization and transaction processing.</p>
+                </div>
+              </article>
+              <article class="infra-card">
+                <span class="infra-card__index">03</span>
+                <div>
+                  <h3>Transaction Routing</h3>
+                  <p>Support the movement of payment requests across available provider connections and processing infrastructure.</p>
+                </div>
+              </article>
+              <article class="infra-card infra-card--cream">
+                <span class="infra-card__index">04</span>
+                <div>
+                  <h3>Payment Visibility</h3>
+                  <p>Track transaction activity and payment status across the whole connected environment.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY -->
+      <section class="why" id="why">
+        <div class="container">
+          <div class="rail rail--line why__rail">
+            <div class="why__head">
+              <div>
+                <p class="eyebrow"><span class="eyebrow__dash"></span>Why Black Duck</p>
+                <h2>Payments made <span class="muted">easier to navigate.</span></h2>
+              </div>
+              <p>The payment landscape can involve different providers, markets, currencies, technologies, and operational requirements. BLACK DUCK brings these elements into a clearer picture, helping businesses understand their options and build payment setups that fit the way they operate.</p>
+            </div>
+            <div class="why__list">
+              <div class="why__row">
+                <span class="why__num">01</span>
+                <h3>Practical Perspective</h3>
+                <p>We focus on real business requirements rather than forcing every company into the same payment model.</p>
+              </div>
+              <div class="why__row">
+                <span class="why__num">02</span>
+                <h3>Connected<br />Thinking</h3>
+                <p>Payments are viewed as part of a wider business environment, with different services and connections considered together.</p>
+              </div>
+              <div class="why__row why__row--accent">
+                <span class="why__num">03</span>
+                <h3>Room<br />to Evolve</h3>
+                <p>Needs change as a business grows, enters new markets, or adds customer journeys. The setup should grow with them.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SOLUTIONS -->
+      <section class="solutions" id="solutions">
+        <div class="container">
+          <div class="rail rail--dark solutions__rail">
+            <div class="solutions__mosaic">
+              <article class="sol-card sol-card--cream">
+                <img src="data:image/svg+xml,%3csvg%20preserveAspectRatio='none'%20overflow='visible'%20style='display:%20block;'%20width='28'%20height='28'%20viewBox='0%200%2028%2028'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Glyph'%3e%3cpath%20id='Base'%20d='M5%2010H23L21%2024H7L5%2010Z'%20stroke='%23040404'%20stroke-width='1.3'%20stroke-miterlimit='10'/%3e%3cpath%20id='Accent'%20d='M10%2010V5H18V10'%20stroke='%23E55723'%20stroke-width='1.3'%20stroke-miterlimit='10'/%3e%3c/g%3e%3c/svg%3e" width="36" height="36" alt="" />
+                <div>
+                  <h3><span>Online</span><strong>Commerce</strong></h3>
+                  <p>Payment solutions for companies selling products and services through websites, applications, and other digital channels, with a focus on creating practical and connected customer payment flows.</p>
+                </div>
+              </article>
+              <div class="sol-card sol-card--intro">
+                <p class="eyebrow"><span class="eyebrow__dash"></span>Payment solutions</p>
+                <h2>One payment environment. <span class="muted">Different business needs.</span></h2>
+                <p>Payment requirements rarely exist in isolation: a company may accept payments, process cards, manage payouts, and connect providers across currencies at once. BLACK DUCK brings these components together around the company’s operational and technical setup.</p>
+              </div>
+              <article class="sol-card sol-card--cream">
+                <img src="data:image/svg+xml,%3csvg%20preserveAspectRatio='none'%20overflow='visible'%20style='display:%20block;'%20width='28'%20height='28'%20viewBox='0%200%2028%2028'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Glyph'%3e%3cpath%20id='Base'%20d='M14%2026L24%2020V9L14%203L4%209V20L14%2026ZM14%2026V15'%20stroke='%23040404'%20stroke-miterlimit='10'/%3e%3cpath%20id='Accent'%20d='M4%209L14%2015L24%209'%20stroke='%23E55723'%20stroke-miterlimit='10'/%3e%3c/g%3e%3c/svg%3e" width="36" height="36" alt="" />
+                <div>
+                  <h3><span>Platforms &amp;</span><strong>Digital Services</strong></h3>
+                  <p>Payment infrastructure for businesses where transactions form part of a wider digital product or service, requiring payment functionality to work naturally within the user experience.</p>
+                </div>
+              </article>
+              <div class="sol-card sol-card--media">
+                <div class="video">
+                  <video
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    preload="auto"
+                    poster="./assets/solutions-earth-CW5_qGMR.png"
+                  >
+                    <source src="./assets/solutions-video-CbtjPkok.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+              <article class="sol-card sol-card--cream">
+                <img src="data:image/svg+xml,%3csvg%20preserveAspectRatio='none'%20overflow='visible'%20style='display:%20block;'%20width='28'%20height='28'%20viewBox='0%200%2028%2028'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Glyph'%3e%3cpath%20id='Base'%20d='M14%203L9%2014L14%2025M14%203L19%2014L14%2025M9%203H19L25%209V19L19%2025H9L3%2019V9L9%203Z'%20stroke='%23040404'/%3e%3cpath%20id='Accent'%20d='M3%2014H25'%20stroke='%23E55723'/%3e%3c/g%3e%3c/svg%3e" width="36" height="36" alt="" />
+                <div>
+                  <h3><span>International</span><strong>Operations</strong></h3>
+                  <p>Payment solutions for companies working across multiple countries, currencies, customers, partners, and suppliers, where local and cross-border payment requirements need to operate together.</p>
+                </div>
+              </article>
+              <article class="sol-card sol-card--cream">
+                <img src="data:image/svg+xml,%3csvg%20preserveAspectRatio='none'%20overflow='visible'%20style='display:%20block;'%20width='28'%20height='28'%20viewBox='0%200%2028%2028'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Glyph'%3e%3cpath%20id='Base'%20d='M24%2019H4M9%2024L4%2019L9%2014'%20stroke='%23040404'%20stroke-miterlimit='10'/%3e%3cpath%20id='Accent'%20d='M4%209H24M19%2014L24%209L19%204'%20stroke='%23E55723'%20stroke-miterlimit='10'/%3e%3c/g%3e%3c/svg%3e" width="36" height="36" alt="" />
+                <div>
+                  <h3><span>Business-to-Business</span><strong>Payments</strong></h3>
+                  <p>Payment and payout flows designed around companies moving funds between commercial partners, suppliers, contractors, and other business recipients.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- APPROACH -->
+      <section class="approach" id="approach">
+        <div class="container">
+          <div class="rail rail--light approach__rail">
+            <div class="approach__head">
+              <p class="eyebrow eyebrow--cream"><span class="eyebrow__dash"></span>Our approach</p>
+              <h2>
+                Payment solutions start with
+                <span class="muted-cream">how your</span>
+                <span class="accent">business</span>
+                <span class="muted-cream">works.</span>
+              </h2>
+              <p>Different businesses require different payment setups. BLACK DUCK starts with the operating model behind the transactions — who is paying, how payments are initiated, where the business operates, which currencies are involved, and where funds need to move next.</p>
+            </div>
+            <div class="approach__steps">
+              <article class="step-card step-card--deep">
+                <div class="step-card__rule"><span></span><i></i></div>
+                <div>
+                  <span class="step-card__index">Step 01</span>
+                  <h3>Map the payment flow</h3>
+                  <p>We look at the business model, customer journey, transaction requirements, markets, and existing payment environment.</p>
+                </div>
+              </article>
+              <article class="step-card">
+                <div class="step-card__rule"><span></span><i></i></div>
+                <div>
+                  <span class="step-card__index">Step 02</span>
+                  <h3>Identify the right components</h3>
+                  <p>Online payments, card acceptance, processing, gateway connectivity, payouts, and cross-border solutions can be considered as parts of one wider payment structure.</p>
+                </div>
+              </article>
+              <article class="step-card step-card--ink">
+                <div class="step-card__rule"><span></span><i></i></div>
+                <div>
+                  <span class="step-card__index">Step 03</span>
+                  <h3>Connect the environment</h3>
+                  <p>The final setup is shaped around the company’s operational requirements and existing technical infrastructure, creating connections that make sense for the way the business works.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="contact" id="contact">
+        <div class="container">
+          <div class="rail contact__rail">
+            <div class="contact__grid">
+              <div class="contact__copy">
+                <div class="contact__intro">
+                  <p class="eyebrow"><span class="eyebrow__dash"></span>Contact</p>
+                  <h2>Let’s stay <span class="accent">connected.</span></h2>
+                  <p>Whether you are looking to accept online payments, process card transactions, connect a payment gateway, manage business payouts, or operate across multiple markets, BLACK DUCK can help you explore payment options built around your business.</p>
+                </div>
+                <div class="contact__cta">
+                  <p class="lead-light">Tell us how your business moves money, and we can start the conversation from there.</p>
+                  <a class="contact__email" href="mailto:info@blackduckpay.com">info@blackduckpay.com</a>
+                </div>
+              </div>
+              <div class="contact__form-col">
+                <div class="contact__form-wrap panel panel--form">
+                <div class="contact__form-head">
+                  <p class="eyebrow"><span class="eyebrow__dash"></span>Get in touch</p>
+                  <h3>Tell us about your payment needs.</h3>
+                  <p>Share a few details about your business, current payment setup, and what you are looking to improve or introduce. The BLACK DUCK team can review your requirements and get back to you with relevant next steps.</p>
+                </div>
+                <form class="contact-form" id="contactForm">
+                  <div class="form-row form-row--name">
+                    <div class="form-field">
+                      <label for="name">Name</label>
+                      <input type="text" id="name" name="name" required />
+                    </div>
+                    <div class="form-field">
+                      <label for="company">Company</label>
+                      <input type="text" id="company" name="company" />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-field">
+                      <label for="email">Business email</label>
+                      <input type="email" id="email" name="email" required />
+                    </div>
+                    <div class="form-field">
+                      <label for="interest">Service of interest</label>
+                      <div class="custom-select">
+                        <input type="hidden" name="interest" value="" />
+                        <button type="button" class="custom-select__trigger" aria-haspopup="listbox" aria-expanded="false">
+                          <span class="custom-select__value"></span>
+                          <img src="data:image/svg+xml,%3csvg%20preserveAspectRatio='none'%20overflow='visible'%20style='display:%20block;'%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Chevron'%3e%3cpath%20id='Vector'%20d='M5%208L10%2013L15%208'%20stroke='%238A8A8A'/%3e%3c/g%3e%3c/svg%3e" width="20" height="20" alt="" />
+                        </button>
+                        <div class="custom-select__dropdown">
+                          <ul class="custom-select__options" role="listbox">
+                            <li role="option" data-value="online-payments">Online Payments</li>
+                            <li role="option" data-value="card-payments">Card Payments</li>
+                            <li role="option" data-value="payment-processing">Payment Processing</li>
+                            <li role="option" data-value="business-payouts">Business Payouts</li>
+                            <li role="option" data-value="multi-currency">Multi-Currency &amp; Cross-Border</li>
+                            <li role="option" data-value="payment-links">Payment Links</li>
+                            <li role="option" data-value="payment-gateway">Payment Gateway</li>
+                            <li role="option" data-value="other">Other</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-field">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                  </div>
+                  <div class="contact-form__footer">
+                    <label class="form-check">
+                      <input type="checkbox" name="privacy" required />
+                      <span>I agree to the processing of my personal data in accordance with the <a href="./privacy.html">Privacy Policy</a>.</span>
+                    </label>
+                    <button type="submit" class="btn btn--accent">
+                      <span>Send request</span>
+                      <img src="data:image/svg+xml,%3csvg%20preserveAspectRatio='none'%20overflow='visible'%20style='display:%20block;'%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Icon%20&%23194;&%23183;%20Arrow'%3e%3cpath%20id='Vector'%20d='M3%2010H17M11.9091%2015L17%2010L11.9091%205'%20stroke='%23FCFCFC'/%3e%3c/g%3e%3c/svg%3e" width="20" height="20" alt="" />
+                    </button>
+                  </div>
+                </form>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="rail rail--line footer__rail">
+          <div class="footer__wordmark">
+            <img src="./assets/wordmark-0Fqca8TF.svg" alt="BLACK DUCK" />
+          </div>
+          <div class="footer__grid">
+            <div class="footer__tagline">
+              <p>Money moves <span class="accent">smarter.</span></p>
+            </div>
+            <nav class="footer__nav" aria-label="Footer">
+              <a href="./about.html">About</a>
+              <a href="#services">Services</a>
+              <a href="./infrastructure.html">Infrastructure</a>
+              <a href="#solutions">Solutions</a>
+              <a href="#contact">Contact</a>
+            </nav>
+            <div class="footer__contact">
+              <span class="footer__label">Contact</span>
+              <a href="mailto:info@blackduckpay.com">info@blackduckpay.com</a>
+              <a href="">blackduckpay.com</a>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <p>© 2026 BLACK DUCK. All rights reserved.</p>
+            <div class="footer__legal">
+              <a href="./privacy.html">Privacy Policy</a>
+              <span>|</span>
+              <a href="./cookie.html">Cookie Policy</a>
+            </div>
+            <button type="button" class="footer__top" aria-label="Back to top" data-back-to-top>
+              <img src="data:image/svg+xml,%3csvg%20width='15'%20height='18'%20viewBox='0%200%2015%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M7.36035%2017.7217V0.72168M14.3604%208.00739L7.36035%200.72168L0.360352%208.00739'%20stroke='%23E55723'/%3e%3c/svg%3e" width="24" height="24" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script nomodule>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
+    <script nomodule crossorigin id="vite-legacy-polyfill" src="./assets/polyfills-legacy-gIId5ATx.js"></script>
+    <script nomodule crossorigin id="vite-legacy-entry" data-src="./assets/index-legacy-pDQPaSiJ.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
+  </body>
+</html>
